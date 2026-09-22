@@ -1,0 +1,1914 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Wateen Store</title>
+<meta name="description" content="Wateen: fig, date, walnut and kalonji olive oil spread.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..600&family=Figtree:wght@400;500;600;700&family=Aref+Ruqaa:wght@400;700&family=Amiri:wght@400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@500&text=انجیرکھجوراخروٹکلونجیزیتونکاتیل&display=swap">
+<style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<style>
+:root{
+  --olive-950:#1E2516; --olive-900:#27301C; --olive-800:#333F24; --olive-700:#46532F; --olive-500:#6F7A4E;
+  --ivory:#F7F2E7; --paper:#FBF8F1; --cream:#EFE7D6; --beige:#E4D8C0; --sand:#CDBB9A;
+  --brown:#6E5039; --brown-deep:#2E2218; --spread:#5A3D2A;
+  --ink:#1F2418; --muted:#585C49; --gold:#A8874F; --gold-soft:#CDB384;
+  --line:rgba(39,48,28,.14); --line-strong:rgba(39,48,28,.3);
+  --on-dark:rgba(247,242,231,.78); --on-dark-line:rgba(247,242,231,.16);
+  --note:#1D4E9E; --note-bg:#EAF0FB;
+  --ff-display:"Bodoni Moda","Bodoni 72","Didot",Georgia,serif;
+  --ff-body:"Figtree",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --ff-logo:"Aref Ruqaa","Amiri","Geeza Pro",serif;
+  --ff-ar:"Amiri","Traditional Arabic","Geeza Pro",serif;
+  --ff-ur:"Noto Nastaliq Urdu","Jameel Noori Nastaleeq","Amiri",serif;
+  --wrap:1240px; --gutter:clamp(16px,4vw,40px); --header-h:76px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:.01ms!important;animation:none!important}}
+body{background:var(--ivory);color:var(--ink);font:400 16px/1.6 var(--ff-body);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body.locked{overflow:hidden}
+img,svg{max-width:100%}
+a{color:inherit}
+p,h1,h2,h3,h4,figure,blockquote{margin:0}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--olive-700);outline-offset:3px}
+.on-dark :focus-visible{outline-color:var(--ivory)}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:16px;top:-60px;background:var(--olive-900);color:var(--ivory);padding:10px 16px;z-index:200}
+.skip:focus{top:12px}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:var(--gutter)}
+.section{padding-block:clamp(72px,9vw,128px)}
+[id]{scroll-margin-top:calc(var(--header-h) + 16px)}
+.ico{display:inline-block;width:20px;height:20px;flex:none;vertical-align:middle}
+
+/* type */
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font:600 12px/1.3 var(--ff-body);letter-spacing:.18em;text-transform:uppercase;color:var(--olive-700)}
+.eyebrow::before{content:"";width:28px;height:1px;background:var(--gold);flex:none}
+.on-dark .eyebrow{color:var(--gold-soft)}
+.display{font-family:var(--ff-display);font-weight:500;line-height:1.05;letter-spacing:-.012em;text-wrap:balance}
+.display em{font-style:italic;font-weight:400;color:var(--olive-700)}
+.h1{font-size:clamp(42px,6.2vw,80px)}
+.h2{font-size:clamp(34px,4.4vw,56px)}
+.h3{font-size:clamp(24px,2.2vw,30px);line-height:1.15}
+.lead{font-size:clamp(17px,1.35vw,19px);line-height:1.65;color:var(--muted);max-width:54ch}
+.body-l{font-size:18px;line-height:1.7;color:var(--muted);max-width:60ch}
+.stack{display:flex;flex-direction:column;gap:20px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 30px;border-radius:2px;border:1px solid transparent;font:600 13px/1 var(--ff-body);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:background .2s,color .2s,border-color .2s;white-space:nowrap}
+.btn-primary{background:var(--olive-900);color:var(--ivory)}
+.btn-primary:hover{background:var(--olive-700)}
+.btn-ghost{background:transparent;border-color:var(--olive-900);color:var(--olive-900)}
+.btn-ghost:hover{background:var(--olive-900);color:var(--ivory)}
+.btn-light{background:var(--ivory);color:var(--olive-900)}
+.btn-light:hover{background:var(--cream)}
+.btn-sm{min-height:44px;padding:0 20px;font-size:12px}
+.btn-block{width:100%}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+.link-arrow{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:3px;width:max-content;max-width:100%}
+.link-arrow:hover{color:var(--olive-700)}
+.link-arrow .ico{width:16px;height:16px;transition:transform .2s}
+.link-arrow:hover .ico{transform:translateX(3px)}
+
+/* header */
+.site-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:60;background:rgba(247,242,231,0);border-bottom:1px solid transparent;transition:background .3s,border-color .3s}
+.site-header.scrolled{background:rgba(247,242,231,.93);border-bottom-color:var(--line);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.header-inner{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:var(--header-h);gap:24px}
+.logo{display:inline-flex;align-items:center;gap:12px;text-decoration:none;color:var(--olive-900);width:max-content}
+.logo-ar{font:400 40px/1 var(--ff-logo);transform:translateY(-3px)}
+.logo-sep,.logo-ar .bar{width:1px;height:26px;background:var(--gold);opacity:.8;display:inline-block}
+.logo-ar{display:inline-flex;align-items:center;gap:12px}
+.logo-ar .bar{transform:translateY(4px)}
+.wa-float{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:70;display:inline-flex;align-items:center;gap:10px;height:54px;padding:0 20px 0 16px;border-radius:999px;background:#1F7A4A;color:#fff;text-decoration:none;font:600 14px/1 var(--ff-body);box-shadow:0 8px 24px rgba(31,36,24,.22);transition:transform .2s,background .2s}
+.wa-float:hover{background:#18633C;transform:translateY(-2px)}
+.wa-float .ico{width:24px;height:24px}
+.btn-wa{background:#1F7A4A;color:#fff}
+.btn-wa:hover{background:#18633C}
+.tag-free{display:inline-block;margin-left:8px;padding:3px 7px;border-radius:2px;background:var(--olive-900);color:var(--ivory);font:600 10px/1.2 var(--ff-body);letter-spacing:.1em;text-transform:uppercase;vertical-align:2px}
+.bank-box{background:var(--paper);border:1px solid var(--line);border-radius:3px;padding:18px 20px;display:grid;gap:8px;font-size:15px}
+.bank-box div{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.bank-box span{color:var(--muted)}
+.logo-en{font:600 11px/1 var(--ff-body);letter-spacing:.34em}
+.site-nav{display:flex;gap:36px}
+.site-nav a{font-size:14.5px;font-weight:500;text-decoration:none;padding-block:6px;border-bottom:1px solid transparent}
+.site-nav a:hover,.site-nav a[aria-current="page"]{border-bottom-color:var(--gold)}
+.header-actions{display:flex;align-items:center;justify-content:flex-end;gap:10px}
+.icon-btn{position:relative;display:inline-grid;place-items:center;width:44px;height:44px;border:0;background:none;cursor:pointer;border-radius:50%;color:var(--olive-900)}
+.icon-btn:hover{background:var(--cream)}
+.icon-btn .ico{width:22px;height:22px}
+.count{position:absolute;top:4px;right:2px;min-width:18px;height:18px;padding:0 5px;border-radius:9px;background:var(--olive-900);color:var(--ivory);font:600 11px/18px var(--ff-body);text-align:center}
+.count[data-n="0"]{display:none}
+.menu-btn{display:none}
+.co-flag{display:none;align-items:center;gap:8px;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--olive-700)}
+.mobile-nav{position:absolute;left:0;right:0;top:100%;background:var(--ivory);border-bottom:1px solid var(--line);padding:8px var(--gutter) 24px}
+.mobile-nav a:not(.btn){display:block;padding:14px 0;border-bottom:1px solid var(--line);font:500 22px/1.2 var(--ff-display);text-decoration:none}
+.mobile-nav .btn{margin-top:20px;width:100%}
+body.mode-checkout .site-nav,body.mode-checkout .header-cta,body.mode-checkout .cart-btn,body.mode-checkout .menu-btn{display:none}
+body.mode-checkout .co-flag{display:inline-flex}
+body.mode-checkout .site-footer{display:none}
+.co-footer{display:none}
+body.mode-checkout .co-footer{display:block}
+
+/* arch frames */
+.arch-wrap{position:relative;max-width:100%}
+.arch-wrap::before{content:"";position:absolute;inset:-12px;border:1px solid var(--gold);border-radius:999px 999px 8px 8px;opacity:.5;pointer-events:none}
+.arch{position:relative;border-radius:999px 999px 6px 6px;overflow:hidden;background:var(--beige);max-width:100%}
+.arch>svg,.frame>svg{display:block;width:100%;height:100%}
+.tag{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);background:rgba(251,248,241,.94);padding:9px 16px;font:600 11px/1 var(--ff-body);letter-spacing:.14em;text-transform:uppercase;border-radius:2px;white-space:nowrap;color:var(--olive-900)}
+
+/* hero */
+.hero{padding-block:clamp(24px,4vw,56px) clamp(56px,7vw,96px)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(40px,6vw,96px);align-items:center}
+.hero-copy{display:flex;flex-direction:column;gap:26px}
+.hero-ctas{display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px}
+.from-price{font-size:14px;color:var(--muted);line-height:1.5}
+.from-price strong{color:var(--ink);font-weight:600}
+.inside{padding-top:24px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:12px}
+.inside-label{font:600 11px/1 var(--ff-body);letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.inside-list{display:flex;flex-wrap:wrap;gap:10px 22px;list-style:none;padding:0;margin:0}
+.inside-list li{display:flex;align-items:center;gap:8px;font-size:14.5px;font-weight:500}
+.inside-list svg{width:26px;height:26px}
+.hero .arch{aspect-ratio:520/620}
+.hero-figure{justify-self:end;width:min(100%,520px)}
+
+/* trust */
+.trust{border-block:1px solid var(--line)}
+.trust ul{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);list-style:none;margin:0;padding:0}
+.trust li{display:flex;align-items:center;gap:14px;padding:24px clamp(12px,1.6vw,24px);background:var(--ivory);font-size:14px;font-weight:600;line-height:1.3;color:var(--olive-900)}
+.trust .ico{width:30px;height:30px;color:var(--olive-700)}
+
+/* purchase */
+.shop{background:var(--cream)}
+.shop-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,5vw,80px);align-items:start}
+.shop-figure{position:sticky;top:calc(var(--header-h) + 32px);display:flex;flex-direction:column;gap:18px;padding:12px}
+.shop-figure .arch{aspect-ratio:500/560}
+.shown{font-size:13px;color:var(--muted);text-align:center}
+.buy-card{background:var(--paper);border:1px solid var(--line);padding:clamp(24px,3.4vw,44px);display:flex;flex-direction:column;gap:22px}
+.buy-plain{display:flex;flex-direction:column;gap:22px}
+.buy-title{font:500 clamp(30px,3vw,42px)/1.08 var(--ff-display);letter-spacing:-.01em}
+.buy-sub{margin-top:10px;font:600 12.5px/1.4 var(--ff-body);letter-spacing:.18em;text-transform:uppercase;color:var(--brown)}
+.buy-sub i{font-style:normal;color:var(--gold);padding-inline:6px}
+.buy-price{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.price{font:500 32px/1 var(--ff-display);font-variant-numeric:lining-nums tabular-nums}
+.unit{font-size:13px;color:var(--muted)}
+.buy-desc{color:var(--muted);font-size:16px;max-width:52ch}
+.variants{border:0;margin:0;padding:0;display:grid;gap:12px;min-width:0}
+.variants legend{font:600 12px/1 var(--ff-body);letter-spacing:.16em;text-transform:uppercase;padding:0;margin-bottom:14px}
+.variant{position:relative;display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:14px;align-items:center;padding:16px 18px;border:1px solid var(--line-strong);border-radius:3px;cursor:pointer;background:transparent;transition:border-color .2s,background .2s,box-shadow .2s}
+.variant:hover{border-color:var(--olive-700)}
+.variant input{position:absolute;opacity:0;pointer-events:none;width:1px;height:1px}
+.v-radio{width:18px;height:18px;border-radius:50%;border:1.5px solid var(--olive-700);display:grid;place-items:center}
+.v-radio::after{content:"";width:8px;height:8px;border-radius:50%;background:var(--olive-900);transform:scale(0);transition:transform .2s}
+.variant.is-selected{border-color:var(--olive-900);box-shadow:inset 0 0 0 1px var(--olive-900);background:#fff}
+.variant.is-selected .v-radio::after{transform:scale(1)}
+.variant:focus-within{outline:2px solid var(--olive-700);outline-offset:3px}
+.v-name{display:block;font-size:15.5px;line-height:1.3}
+.v-name strong{font-weight:700;margin-right:6px}
+.v-desc{display:block;font-size:13.5px;color:var(--muted);margin-top:3px;line-height:1.4}
+.v-price{font-weight:600;font-size:15px;font-variant-numeric:tabular-nums;text-align:right}
+.v-badge{position:absolute;top:-10px;right:16px;background:var(--olive-900);color:var(--ivory);font:600 10px/1 var(--ff-body);letter-spacing:.14em;text-transform:uppercase;padding:5px 9px;border-radius:2px}
+.v-value{display:block;font-size:11.5px;font-weight:500;color:var(--olive-700);margin-top:2px}
+.buy-actions{display:flex;gap:12px}
+.qty{display:inline-flex;align-items:center;border:1px solid var(--line-strong);border-radius:2px;height:54px;flex:none;background:transparent}
+.qty button{width:44px;height:100%;background:none;border:0;font-size:20px;line-height:1;cursor:pointer}
+.qty button:hover{background:var(--cream)}
+.qty input{width:38px;height:100%;text-align:center;border:0;background:transparent;font:600 16px var(--ff-body);color:var(--ink);-moz-appearance:textfield;appearance:textfield}
+.qty input::-webkit-outer-spin-button,.qty input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.qty-sm{height:36px}
+.qty-sm button{width:32px;font-size:16px}
+.qty-sm span{min-width:26px;text-align:center;font-weight:600;font-size:14px}
+.btn-atc{flex:1;min-width:0}
+.btn-atc span{font-weight:500;letter-spacing:.06em}
+.reassure{display:flex;flex-wrap:wrap;gap:8px 18px;list-style:none;padding:0;margin:0;font-size:13px;color:var(--muted)}
+.reassure li{display:flex;align-items:center;gap:7px}
+.reassure .ico{width:16px;height:16px;color:var(--olive-700)}
+.ship-hint{font-size:13px;color:var(--muted);padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center}
+
+/* ingredients */
+.ing-head{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:40px;align-items:end;margin-bottom:clamp(48px,6vw,88px)}
+.ing-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:clamp(16px,2.4vw,36px);list-style:none;padding:0;margin:0}
+.ing:nth-child(even){margin-top:64px}
+.ing-plate{aspect-ratio:1;border-radius:50%;background:var(--cream);display:grid;place-items:center;border:1px solid var(--line);position:relative}
+.ing-plate svg{width:58%;height:58%}
+.ing-ur{display:block;font:500 17px/2.3 var(--ff-ur);color:var(--brown);margin-top:14px;direction:rtl;text-align:left}
+.ing h3{font:500 clamp(24px,2vw,28px)/1.1 var(--ff-display);margin:0 0 8px}
+.ing p{font-size:15px;color:var(--muted);line-height:1.55}
+
+/* story */
+.story-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(40px,6vw,96px);align-items:center}
+.frame{border-radius:4px;overflow:hidden;background:var(--beige)}
+.flatlay{aspect-ratio:1}
+.ing-names{display:flex;flex-wrap:wrap;gap:6px 0;font:italic 400 19px/1.4 var(--ff-display);color:var(--brown)}
+.ing-names span:not(:last-child)::after{content:"·";color:var(--gold);padding-inline:12px;font-style:normal}
+
+/* verse */
+.verse{background:var(--olive-900);color:var(--ivory)}
+.verse-inner{max-width:780px;margin-inline:auto;display:flex;flex-direction:column;align-items:center;text-align:center;gap:26px}
+.verse h2{font:400 clamp(20px,2vw,24px)/1.3 var(--ff-display);letter-spacing:.02em;color:var(--gold-soft)}
+.verse-ar{font:400 clamp(52px,8.6vw,104px)/1.5 var(--ff-ar);direction:rtl}
+.verse-rule{display:flex;align-items:center;gap:14px;width:min(360px,100%)}
+.verse-rule::before,.verse-rule::after{content:"";flex:1;height:1px;background:var(--gold);opacity:.5}
+.verse-rule i{width:5px;height:5px;background:var(--gold);transform:rotate(45deg);opacity:.8}
+.verse-tr{font:italic 400 clamp(22px,2.2vw,28px)/1.3 var(--ff-display)}
+.verse-cite{font:600 11px/1 var(--ff-body);letter-spacing:.2em;text-transform:uppercase;color:rgba(247,242,231,.58)}
+.verse-body{color:var(--on-dark);max-width:56ch;font-size:17px}
+
+/* enjoy */
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px 48px;flex-wrap:wrap;margin-bottom:clamp(40px,5vw,64px)}
+.sec-head .lead{max-width:44ch}
+.enjoy-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(16px,2vw,28px);list-style:none;padding:0;margin:0}
+.enjoy-card{display:flex;flex-direction:column;gap:12px}
+.enjoy-card .art{aspect-ratio:5/4;background:var(--cream);border-radius:3px;display:grid;place-items:center;margin-bottom:8px}
+.enjoy-card .art svg{width:74%;height:74%}
+.enjoy-card h3{font:500 24px/1.15 var(--ff-display)}
+.enjoy-card p{font-size:15px;color:var(--muted)}
+.fineprint{margin-top:36px;font-size:13.5px;color:var(--muted);font-style:italic}
+
+/* texture */
+.texture{background:var(--brown-deep);color:var(--ivory);overflow:hidden}
+.texture-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px,5vw,72px);align-items:center}
+.texture h2{font:500 clamp(44px,6vw,84px)/1 var(--ff-display);letter-spacing:-.015em}
+.texture h2 span{display:block}
+.texture h2 em{display:block;font-style:italic;font-weight:400;color:var(--gold-soft);font-size:.72em;margin-top:10px;line-height:1.1}
+.notes{display:grid;gap:0;margin:36px 0 0;border-top:1px solid var(--on-dark-line)}
+.notes div{display:grid;grid-template-columns:110px 1fr;gap:16px;padding:14px 0;border-bottom:1px solid var(--on-dark-line)}
+.notes dt{font:600 12px/1.6 var(--ff-body);letter-spacing:.16em;text-transform:uppercase;color:var(--gold-soft)}
+.notes dd{margin:0;color:var(--on-dark);font-size:15px}
+.texture-art svg{display:block;width:100%;height:auto;overflow:visible}
+.spread-g{animation:spread 8s cubic-bezier(.45,.05,.3,1) infinite}
+.knife-move{transform:translate(390px,0);animation:knife 8s cubic-bezier(.45,.05,.3,1) infinite}
+.float{animation:drift 6s ease-in-out infinite alternate}
+@keyframes spread{0%{clip-path:inset(0 100% 0 0);opacity:1}60%{clip-path:inset(0 0 0 0);opacity:1}88%{clip-path:inset(0 0 0 0);opacity:1}97%{clip-path:inset(0 0 0 0);opacity:0}100%{clip-path:inset(0 100% 0 0);opacity:0}}
+@keyframes knife{0%{transform:translate(0,0);opacity:1}60%{transform:translate(390px,0);opacity:1}70%{transform:translate(420px,-50px);opacity:0}94%{transform:translate(0,-50px);opacity:0}100%{transform:translate(0,0);opacity:1}}
+@keyframes drift{from{transform:translate(0,0)}to{transform:translate(6px,-14px)}}
+
+/* not inside */
+.not-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,6vw,96px);align-items:start}
+.checklist{list-style:none;padding:0;margin:0;border-top:1px solid var(--line)}
+.checklist li{display:flex;gap:18px;align-items:center;padding:20px 0;border-bottom:1px solid var(--line);font:400 clamp(20px,2vw,25px)/1.3 var(--ff-display)}
+.checklist .tick{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;border:1px solid var(--olive-700);color:var(--olive-900);flex:none}
+.checklist .tick .ico{width:16px;height:16px}
+
+/* brand */
+.brand{background:var(--cream);position:relative;overflow:hidden}
+.watermark{position:absolute;right:-3%;top:50%;transform:translateY(-52%);font:400 clamp(150px,22vw,330px)/1.05 var(--ff-logo);text-align:center;color:var(--beige);pointer-events:none;user-select:none;opacity:.9}
+.brand-grid{position:relative;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(40px,6vw,96px);align-items:start}
+.brand blockquote{font:italic 400 clamp(28px,3.2vw,42px)/1.25 var(--ff-display);color:var(--olive-900);text-wrap:balance}
+
+/* reviews */
+.review-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.review-ph{border:1px dashed var(--line-strong);border-radius:3px;padding:28px;display:flex;flex-direction:column;gap:14px;min-height:230px;background:transparent}
+.review-ph .who{display:flex;align-items:center;gap:12px;margin-bottom:6px}
+.avatar{width:42px;height:42px;border-radius:50%;background:var(--beige);flex:none}
+.sk{height:9px;border-radius:5px;background:var(--beige)}
+.review-ph .label{margin-top:auto;font-size:13px;color:var(--muted);display:flex;align-items:center;gap:8px}
+.review-ph .label::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.review-empty{display:flex;justify-content:space-between;gap:16px 32px;align-items:center;flex-wrap:wrap;margin-top:28px;padding:22px 26px;background:var(--cream);border-radius:3px}
+.review-empty p{font-size:15px;color:var(--muted);max-width:62ch}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(40px,6vw,96px);align-items:start}
+.faq-list{border-top:1px solid var(--line)}
+.faq-list details{border-bottom:1px solid var(--line)}
+.faq-list summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:22px 0;cursor:pointer;font:500 clamp(18px,1.6vw,21px)/1.35 var(--ff-display)}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary .ico{width:18px;height:18px;transition:transform .25s;color:var(--olive-700)}
+.faq-list details[open] summary .ico{transform:rotate(45deg)}
+.faq-a{padding:0 48px 24px 0;color:var(--muted);max-width:64ch;display:flex;flex-direction:column;gap:10px}
+.pending{display:inline-flex;align-items:center;gap:6px;width:max-content;font:600 11px/1 var(--ff-body);letter-spacing:.12em;text-transform:uppercase;color:var(--brown);background:var(--cream);padding:6px 10px;border-radius:2px}
+
+/* final */
+.final{background:var(--beige)}
+.final-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,6vw,96px);align-items:center}
+.final h2{font-size:clamp(44px,5.6vw,76px)}
+.final .arch{aspect-ratio:4/4.6;background:var(--cream)}
+.final-figure{width:min(100%,480px);justify-self:center}
+
+/* footer */
+.site-footer{background:var(--olive-950);color:var(--ivory);padding-block:clamp(56px,7vw,88px) 32px}
+.footer-news{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px 64px;align-items:end;padding-bottom:48px;border-bottom:1px solid var(--on-dark-line)}
+.footer-news h2{font-size:clamp(30px,3.4vw,44px)}
+.footer-news p{color:var(--on-dark);margin-top:12px;max-width:44ch}
+.news-form{display:flex;gap:0;border-bottom:1px solid var(--ivory)}
+.news-form input{flex:1;min-width:0;height:56px;background:transparent;border:0;color:var(--ivory);font:400 17px var(--ff-body);padding:0 4px}
+.news-form input::placeholder{color:rgba(247,242,231,.55)}
+.news-form .btn{min-height:56px;padding:0 8px 0 20px;background:none;color:var(--ivory);border:0}
+.news-form .btn:hover{color:var(--gold-soft)}
+.news-done{font:italic 400 22px/1.4 var(--ff-display);color:var(--gold-soft)}
+.footer-main{display:grid;grid-template-columns:minmax(0,1.3fr) repeat(3,minmax(0,.6fr));gap:40px;padding-block:48px}
+.footer-brand .logo{color:var(--ivory)}
+.footer-brand .logo-ar{font-size:56px}
+.footer-brand p{color:var(--on-dark);margin-top:18px;max-width:30ch}
+.footer-col h3{font:600 11px/1 var(--ff-body);letter-spacing:.2em;text-transform:uppercase;color:var(--gold-soft);margin-bottom:18px}
+.footer-col ul{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.footer-col a{color:var(--on-dark);text-decoration:none;font-size:15px}
+.footer-col a:hover{color:var(--ivory);text-decoration:underline;text-underline-offset:4px}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding-top:28px;border-top:1px solid var(--on-dark-line);font-size:13px;color:rgba(247,242,231,.6)}
+.socials{display:flex;gap:6px}
+.socials a{display:grid;place-items:center;width:40px;height:40px;border:1px solid var(--on-dark-line);border-radius:50%;color:var(--ivory)}
+.socials a:hover{border-color:var(--gold-soft)}
+.socials .ico{width:18px;height:18px}
+.co-footer{border-top:1px solid var(--line);padding-block:24px;font-size:13px;color:var(--muted)}
+.co-footer nav{display:flex;gap:20px;flex-wrap:wrap}
+
+/* sticky ATC */
+.sticky-atc{position:fixed;left:0;right:0;bottom:0;z-index:45;background:rgba(251,248,241,.97);border-top:1px solid var(--line);padding:10px var(--gutter) calc(10px + env(safe-area-inset-bottom,0px));display:none;grid-template-columns:auto minmax(0,1fr) auto;gap:12px;align-items:center;transform:translateY(110%);transition:transform .3s ease;box-shadow:0 -8px 24px rgba(31,36,24,.06)}
+.sticky-atc.show{transform:none}
+.sticky-thumb{width:34px;height:44px}
+.sticky-atc select{width:100%;height:48px;border:1px solid var(--line-strong);border-radius:2px;background:#fff;padding:0 10px;font:600 14px var(--ff-body);color:var(--ink)}
+.sticky-atc .btn{min-height:48px;padding:0 18px}
+
+/* drawer */
+.overlay{position:fixed;inset:0;background:rgba(31,36,24,.42);opacity:0;pointer-events:none;transition:opacity .3s;z-index:80}
+.overlay.show{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(440px,100%);background:var(--ivory);z-index:90;transform:translateX(100%);visibility:hidden;transition:transform .38s cubic-bezier(.2,.7,.2,1),visibility 0s linear .38s;display:flex;flex-direction:column;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.drawer.open{transform:none;visibility:visible;transition:transform .38s cubic-bezier(.2,.7,.2,1)}
+.drawer-head{display:flex;justify-content:space-between;align-items:center;padding:18px 24px;border-bottom:1px solid var(--line)}
+.drawer-head h2{font:500 26px/1 var(--ff-display)}
+.shipbar{padding:16px 24px;background:var(--cream)}
+.shipbar p{font-size:13.5px}
+.shipbar strong{font-weight:600}
+.bar{height:4px;background:var(--beige);border-radius:2px;overflow:hidden;margin-top:10px}
+.bar span{display:block;height:100%;background:var(--olive-700);transition:width .4s}
+.drawer-lines{flex:1;overflow:auto;padding:0 24px;list-style:none;margin:0}
+.drawer-foot{padding:20px 24px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:12px}
+.sum-row{display:flex;justify-content:space-between;gap:16px;font-size:15px;font-variant-numeric:tabular-nums}
+.sum-row.total{font:500 24px/1.2 var(--ff-display);padding-top:14px;border-top:1px solid var(--line)}
+.small{font-size:13px;color:var(--muted)}
+.line{display:grid;grid-template-columns:64px minmax(0,1fr) auto;gap:14px;padding:18px 0;border-bottom:1px solid var(--line);align-items:start}
+.line-thumb{width:64px;height:76px;background:var(--cream);border-radius:3px;padding:8px}
+.line-name{font-weight:600;font-size:15px;line-height:1.3}
+.line-var{font-size:13px;color:var(--muted);margin-top:2px}
+.line-row{display:flex;align-items:center;gap:14px;margin-top:10px}
+.line-remove{background:none;border:0;padding:0;font-size:12.5px;text-decoration:underline;text-underline-offset:3px;color:var(--muted);cursor:pointer}
+.line-price{font-weight:600;font-size:15px;font-variant-numeric:tabular-nums}
+.empty{padding:48px 0;text-align:center;display:flex;flex-direction:column;align-items:center;gap:14px}
+.empty svg{width:80px;height:100px}
+.empty p{color:var(--muted)}
+.upsell{padding:14px;border:1px solid var(--line);border-radius:3px;display:flex;align-items:center;gap:12px;margin-top:18px;font-size:13.5px}
+.upsell svg{width:36px;height:44px;flex:none}
+.upsell button{margin-left:auto}
+
+/* pages */
+.page-top{padding-block:clamp(28px,4vw,48px) clamp(24px,3vw,40px)}
+.crumbs{font-size:13px;color:var(--muted);display:flex;gap:8px;flex-wrap:wrap}
+.crumbs a{text-decoration:none}
+.crumbs a:hover{text-decoration:underline}
+.pdp-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(32px,5vw,72px);align-items:start}
+.gallery-main{aspect-ratio:1/1.05;background:var(--beige);border-radius:4px;overflow:hidden}
+.gallery-main svg{display:block;width:100%;height:100%}
+.thumbs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:10px}
+.thumb{aspect-ratio:1;background:var(--beige);border:1px solid transparent;border-radius:3px;padding:0;cursor:pointer;overflow:hidden}
+.thumb svg{display:block;width:100%;height:100%}
+.thumb[aria-pressed="true"]{border-color:var(--olive-900);box-shadow:inset 0 0 0 1px var(--olive-900)}
+.pdp-buy{position:sticky;top:calc(var(--header-h) + 24px)}
+.spec{margin-top:8px;border-top:1px solid var(--line)}
+.spec details{border-bottom:1px solid var(--line)}
+.spec summary{list-style:none;display:flex;justify-content:space-between;align-items:center;padding:18px 0;cursor:pointer;font:600 13px/1 var(--ff-body);letter-spacing:.14em;text-transform:uppercase}
+.spec summary::-webkit-details-marker{display:none}
+.spec summary .ico{width:16px;height:16px;transition:transform .25s}
+.spec details[open] summary .ico{transform:rotate(45deg)}
+.spec .faq-a{padding-right:0}
+.nut-wrap{overflow-x:auto}
+.nut{width:100%;border-collapse:collapse;font-size:14px}
+.nut th,.nut td{text-align:left;padding:9px 0;border-bottom:1px solid var(--line)}
+.nut td:last-child{text-align:right;color:var(--muted)}
+.cart-grid,.co-grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:clamp(32px,5vw,64px);align-items:start}
+.cart-lines{list-style:none;padding:0;margin:0;border-top:1px solid var(--line)}
+.cart-lines .line{grid-template-columns:96px minmax(0,1fr) auto;gap:20px;padding:24px 0}
+.cart-lines .line-thumb{width:96px;height:112px;padding:12px}
+.summary{background:var(--cream);padding:28px;border-radius:3px;display:flex;flex-direction:column;gap:14px;position:sticky;top:calc(var(--header-h) + 24px)}
+.summary h2{font:500 26px/1.1 var(--ff-display);margin-bottom:4px}
+.summary .shipbar{padding:0 0 4px;background:none}
+.field{display:flex;flex-direction:column;gap:6px;min-width:0}
+.field label{font-size:13px;font-weight:600}
+.field input,.field select,.field textarea{width:100%;height:50px;border:1px solid var(--line-strong);border-radius:3px;padding:0 14px;font:400 16px var(--ff-body);background:#FFFDF8;color:var(--ink)}
+.field textarea{height:auto;min-height:130px;padding:12px 14px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid var(--olive-700);outline-offset:0;border-color:transparent}
+.field .hint{font-size:12.5px;color:var(--muted)}
+.fields{display:grid;gap:14px}
+.field-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.co-form fieldset{border:0;padding:0;margin:0 0 36px;min-width:0}
+.co-form legend{font:500 26px/1.1 var(--ff-display);padding:0;margin-bottom:18px}
+.check{display:flex;gap:10px;align-items:center;font-size:14px;color:var(--muted)}
+.check input{width:18px;height:18px;accent-color:var(--olive-900)}
+.choice{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:14px;align-items:start;padding:16px 18px;border:1px solid var(--line-strong);border-radius:3px;cursor:pointer}
+.choice+.choice{margin-top:10px}
+.choice input{width:18px;height:18px;margin:2px 0 0;accent-color:var(--olive-900)}
+.choice.is-selected{border-color:var(--olive-900);box-shadow:inset 0 0 0 1px var(--olive-900);background:#fff}
+.choice strong{display:block;font-weight:600;font-size:15px}
+.choice span{font-size:13.5px;color:var(--muted)}
+.choice b{font-weight:600;font-size:15px}
+.pay-note{margin-top:10px;font-size:13.5px;color:var(--muted);padding:12px 16px;background:var(--cream);border-radius:3px}
+.co-sum summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font:500 22px/1.2 var(--ff-display);padding-bottom:12px}
+.co-sum summary::-webkit-details-marker{display:none}
+.co-sum .line{grid-template-columns:56px minmax(0,1fr) auto}
+.co-sum .line-thumb{width:56px;height:66px;position:relative}
+.discount{display:flex;gap:10px}
+.discount input{flex:1;min-width:0;height:48px;border:1px solid var(--line-strong);border-radius:3px;padding:0 14px;font:400 15px var(--ff-body);background:#FFFDF8}
+.narrow{max-width:760px;margin-inline:auto}
+.confirm-mark{width:64px;height:64px;border-radius:50%;background:var(--olive-900);color:var(--ivory);display:grid;place-items:center}
+.confirm-mark .ico{width:28px;height:28px}
+.steps-list{list-style:none;padding:0;margin:0;border-top:1px solid var(--line)}
+.steps-list li{display:grid;grid-template-columns:34px 1fr;gap:14px;padding:18px 0;border-bottom:1px solid var(--line);color:var(--muted)}
+.steps-list li strong{display:block;color:var(--ink);font-weight:600}
+.steps-list .ico{width:22px;height:22px;color:var(--olive-700);margin-top:2px}
+.story-hero{text-align:left;display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(24px,5vw,72px);align-items:center;padding-block:clamp(40px,6vw,88px)}
+.story-hero .big-ar{display:flex;flex-direction:column;align-items:center;font:400 clamp(84px,11vw,160px)/1.15 var(--ff-logo);color:var(--olive-900)}
+.story-hero .big-ar i{width:55%;height:1px;background:var(--gold);margin:4px 0 14px}
+.principles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border-block:1px solid var(--line)}
+.principles>div{background:var(--ivory);padding:36px clamp(20px,3vw,40px);display:flex;flex-direction:column;gap:12px}
+.principles h3{font:500 26px/1.15 var(--ff-display)}
+.principles p{color:var(--muted);font-size:15.5px}
+.slot-ph{border:1px dashed var(--line-strong);border-radius:3px;aspect-ratio:4/3;display:grid;place-items:center;text-align:center;padding:24px;color:var(--muted);font-size:14px;background:var(--cream)}
+.faq-page{display:grid;grid-template-columns:220px minmax(0,1fr);gap:clamp(32px,5vw,80px);align-items:start}
+.toc{position:sticky;top:calc(var(--header-h) + 24px);display:flex;flex-direction:column;gap:4px}
+.toc a{padding:8px 0;font-size:14.5px;text-decoration:none;color:var(--muted);border-left:1px solid var(--line);padding-left:14px}
+.toc a:hover{color:var(--ink);border-left-color:var(--gold)}
+.faq-group+.faq-group{margin-top:56px}
+.faq-group h2{font:500 30px/1.1 var(--ff-display);margin-bottom:18px}
+.policy h2{font:500 26px/1.2 var(--ff-display);margin:40px 0 12px}
+.policy h2:first-child{margin-top:0}
+.policy p{color:var(--muted);max-width:66ch}
+.contact-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(32px,5vw,80px);align-items:start}
+.contact-card{background:var(--cream);padding:28px;border-radius:3px;display:flex;flex-direction:column;gap:20px}
+.contact-card h3{font:600 11px/1 var(--ff-body);letter-spacing:.2em;text-transform:uppercase;color:var(--olive-700);margin-bottom:8px}
+.copy-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.copy-row span{font-size:17px;font-weight:500;user-select:all}
+.copy-btn{background:none;border:1px solid var(--line-strong);border-radius:2px;padding:4px 10px;font-size:12px;cursor:pointer}
+.form-msg{padding:14px 16px;background:var(--cream);border-radius:3px;font-size:14.5px}
+
+/* toast */
+.toast{position:fixed;left:50%;top:calc(env(safe-area-inset-top,0px) + 88px);transform:translate(-50%,-20px);opacity:0;pointer-events:none;background:var(--olive-900);color:var(--ivory);padding:12px 20px;border-radius:2px;font-size:14px;z-index:120;transition:opacity .25s,transform .25s}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* handoff notes */
+.note{display:none}
+.handoff-toggle{position:fixed;left:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:70;display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:999px;border:1px solid var(--note);background:#fff;color:var(--note);font:600 12px/1 var(--ff-body);cursor:pointer;box-shadow:0 4px 14px rgba(29,78,158,.14)}
+.handoff-toggle i{width:8px;height:8px;border-radius:50%;border:1.5px solid var(--note)}
+body.handoff .handoff-toggle{background:var(--note);color:#fff}
+body.handoff .handoff-toggle i{background:#fff;border-color:#fff}
+body.handoff .note{display:block;margin-top:14px;padding:10px 12px;border:1px solid var(--note);border-left-width:3px;background:var(--note-bg);color:#15325F;font:500 12.5px/1.5 var(--ff-body);border-radius:2px;text-align:left;max-width:70ch}
+body.handoff .note b{font-weight:700}
+body.handoff .ph{background:rgba(29,78,158,.12);outline:1px dashed var(--note);outline-offset:1px;border-radius:1px}
+body.handoff [data-shopify]{position:relative;outline:1px dashed rgba(29,78,158,.55);outline-offset:-4px}
+body.handoff [data-shopify]::after{content:"Shopify · " attr(data-shopify);position:absolute;top:8px;right:8px;z-index:6;background:var(--note);color:#fff;font:600 11px/1 var(--ff-body);padding:5px 8px;border-radius:2px;pointer-events:none}
+
+/* responsive */
+@media (max-width:1080px){
+  .ing-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .ing:nth-child(even){margin-top:0}
+  .ing:nth-child(3n+2){margin-top:48px}
+  .enjoy-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .footer-main{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .footer-brand{grid-column:1/-1}
+  .trust li{flex-direction:column;align-items:flex-start;gap:10px}
+}
+@media (max-width:860px){
+  :root{--header-h:64px}
+  .header-inner{grid-template-columns:1fr auto}
+  .site-nav,.header-cta{display:none}
+  .menu-btn{display:inline-grid}
+  .logo-ar{font-size:34px}
+  .hero-grid,.shop-grid,.story-grid,.not-grid,.brand-grid,.faq-grid,.final-grid,.texture-grid,.pdp-grid,.cart-grid,.co-grid,.contact-grid,.footer-news,.ing-head{grid-template-columns:minmax(0,1fr)}
+  .hero-figure{justify-self:center;width:min(100%,420px);padding:12px}
+  .shop-figure{position:static;max-width:440px;margin-inline:auto;width:100%}
+  .trust ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .trust li:last-child{grid-column:1/-1}
+  .trust li{flex-direction:row;align-items:center}
+  .ing-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ing:nth-child(3n+2){margin-top:0}
+  .ing:nth-child(even){margin-top:40px}
+  .ing:last-child{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:20px;align-items:center;margin-top:8px}
+  .review-grid{grid-template-columns:minmax(0,1fr)}
+  .review-ph:nth-child(n+2){display:none}
+  .final-figure{order:-1;width:min(100%,380px)}
+  .sticky-atc{display:grid}
+  .handoff-toggle,.wa-float{bottom:calc(84px + env(safe-area-inset-bottom,0px))}
+  .wa-float{width:54px;padding:0;justify-content:center}
+  .wa-float span{display:none}
+  body.mode-checkout .wa-float,body.mode-checkout .handoff-toggle{bottom:calc(16px + env(safe-area-inset-bottom,0px))}
+  .pdp-buy,.summary,.toc{position:static}
+  .faq-page{grid-template-columns:minmax(0,1fr)}
+  .toc{flex-direction:row;flex-wrap:wrap;gap:8px}
+  .toc a{border:1px solid var(--line);border-radius:999px;padding:8px 14px}
+  .principles{grid-template-columns:minmax(0,1fr)}
+  .story-hero{grid-template-columns:minmax(0,1fr)}
+  .co-sum{order:-1}
+  .footer-main{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .watermark{top:auto;bottom:-6%;transform:none}
+  .faq-a{padding-right:0}
+}
+@media (max-width:520px){
+  .enjoy-grid{gap:20px 14px}
+  .enjoy-card h3{font-size:21px}
+  .btn-atc [data-atc-price]{display:none}
+  .btn-atc{padding:0 16px}
+  .qty{height:54px}
+  .variant{padding:16px 14px;gap:12px}
+  .field-row{grid-template-columns:minmax(0,1fr)}
+  .sticky-thumb{display:none}
+  .sticky-atc{grid-template-columns:minmax(0,1fr) auto}
+  .cart-lines .line{grid-template-columns:72px minmax(0,1fr);}
+  .cart-lines .line-thumb{width:72px;height:88px}
+  .cart-lines .line-price{grid-column:2}
+  .notes div{grid-template-columns:minmax(0,1fr);gap:4px}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ SVG LIBRARY ============ -->
+<svg aria-hidden="true" width="0" height="0" style="position:absolute;overflow:hidden">
+<defs>
+  <path id="leaf" d="M0 0 C10 -7 30 -7 44 0 C30 7 10 7 0 0Z"/>
+  <path id="seed" d="M0 0 L4.2 -1.3 L5.2 1.1 L1 2.2Z"/>
+
+  <!-- icons -->
+  <symbol id="i-five" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="4.6" r="2.1"/><circle cx="19.1" cy="9.8" r="2.1"/><circle cx="16.4" cy="18.2" r="2.1"/><circle cx="7.6" cy="18.2" r="2.1"/><circle cx="4.9" cy="9.8" r="2.1"/></g></symbol>
+  <symbol id="i-nosugar" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 19 7.5v8L12 19l-7-3.5v-8L12 4Z"/><path d="M5 7.5 12 11l7-3.5M12 11v8"/><path d="M3.5 20.5 20.5 3.5"/></g></symbol>
+  <symbol id="i-drop" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M12 3c3 4.5 6 7.6 6 11a6 6 0 0 1-12 0c0-3.4 3-6.5 6-11Z"/><path d="M9.3 14.3a2.8 2.8 0 0 0 2.7 2.8"/></g></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8 5-13 14.5-14C19 14 14 19 5 19Z"/><path d="M5 19 13.5 10.5"/></g></symbol>
+  <symbol id="i-spoon" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><ellipse cx="8" cy="8" rx="3.8" ry="5.2" transform="rotate(-45 8 8)"/><path d="M11 11l9 9"/></g></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="5" y="10.5" width="14" height="10" rx="1.5"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></g></symbol>
+  <symbol id="i-cash" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="3" y="6.5" width="18" height="11" rx="1.5"/><circle cx="12" cy="12" r="2.5"/><path d="M6.5 9.5v5M17.5 9.5v5"/></g></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M3.5 7.5 12 3l8.5 4.5v9L12 21l-8.5-4.5v-9Z"/><path d="M3.5 7.5 12 12l8.5-4.5M12 12v9"/></g></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M5 8.5h14l-1 11.5H6L5 8.5Z"/><path d="M9 8.5V7a3 3 0 0 1 6 0v1.5"/></g></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 8.5h16M4 15.5h16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M3 6h11v10H3zM14 9h4l3 3v4h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></g></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><rect x="7" y="3" width="10" height="18" rx="2"/><path d="M11 18h2"/></g></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><circle cx="16.8" cy="7.2" r=".7" fill="currentColor" stroke="none"/></g></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M13.6 21v-7.1h2.4l.4-2.9h-2.8V9.2c0-.8.3-1.4 1.4-1.4h1.5V5.2c-.3 0-1.2-.1-2.2-.1-2.2 0-3.6 1.3-3.6 3.7V11H8.3v2.9h2.4V21h2.9Z"/></symbol>
+  <symbol id="i-tt" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M14 4v10.2a3.3 3.3 0 1 1-3.3-3.3"/><path d="M14 4c.4 2.6 2.2 4.3 5 4.5"/></g></symbol>
+
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 3.2a8.8 8.8 0 0 0-7.6 13.2L3.2 20.8l4.5-1.2A8.8 8.8 0 1 0 12 3.2Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path fill="currentColor" d="M9.1 7.6c.2-.4.5-.4.7-.4h.5c.2 0 .4.1.5.4l.7 1.7c.1.2 0 .4-.1.6l-.5.6c-.1.1-.1.3 0 .5a6.3 6.3 0 0 0 2.7 2.7c.2.1.4.1.5 0l.6-.6c.2-.2.4-.2.6-.1l1.7.7c.3.1.4.3.4.5v.5c0 .3-.1.5-.4.7-.5.4-1.1.5-1.8.4-3-.5-5.7-3.2-6.2-6.2-.1-.6.1-1.3.5-1.8Z"/></symbol>
+  <!-- product: jar -->
+  <symbol id="jar" viewBox="0 0 200 250">
+    <ellipse cx="100" cy="245" rx="74" ry="5" fill="#2E2218" opacity=".16"/>
+    <rect x="24" y="58" width="152" height="184" rx="30" fill="#5A3D2A"/>
+    <g fill="#16140F"><circle cx="46" cy="80" r="1.3"/><circle cx="60" cy="226" r="1.2"/><circle cx="150" cy="84" r="1.2"/><circle cx="160" cy="222" r="1.3"/><circle cx="34" cy="150" r="1.1"/><circle cx="166" cy="160" r="1.2"/><circle cx="120" cy="230" r="1.1"/><circle cx="80" cy="232" r="1.2"/><circle cx="104" cy="78" r="1.1"/><circle cx="132" cy="72" r="1.2"/></g>
+    <g fill="#A57E58"><ellipse cx="54" cy="218" rx="2.4" ry="1.4"/><ellipse cx="142" cy="230" rx="2.6" ry="1.5"/><ellipse cx="72" cy="74" rx="2.2" ry="1.3"/><ellipse cx="160" cy="110" rx="2.2" ry="1.3"/><ellipse cx="100" cy="226" rx="2.4" ry="1.3"/></g>
+    <rect x="24" y="58" width="152" height="184" rx="30" fill="none" stroke="#2E2218" stroke-opacity=".35" stroke-width="2"/>
+    <rect x="40" y="46" width="120" height="16" rx="4" fill="#3E2A1D"/>
+    <rect x="34" y="14" width="132" height="38" rx="7" fill="#27301C"/>
+    <rect x="34" y="14" width="132" height="6" rx="3" fill="#46532F"/>
+    <path d="M40 27h120M40 35h120M40 43h120" stroke="#1E2516" stroke-width="1.4"/>
+    <rect x="38" y="94" width="124" height="120" rx="3" fill="#F7F2E7"/>
+    <rect x="43.5" y="99.5" width="113" height="109" rx="2" fill="none" stroke="#A8874F" stroke-width=".8"/>
+    <text x="100" y="131" text-anchor="middle" font-family="'Aref Ruqaa','Amiri',serif" font-size="27" fill="#27301C">تين</text>
+    <line x1="90" x2="110" y1="139" y2="139" stroke="#A8874F" stroke-width=".8"/>
+    <text x="100" y="163" text-anchor="middle" font-family="'Aref Ruqaa','Amiri',serif" font-size="25" fill="#27301C">زيتون</text>
+    <line x1="84" x2="116" y1="173" y2="173" stroke="#A8874F" stroke-width=".7"/>
+    <text x="100.5" y="187" text-anchor="middle" font-family="Figtree,system-ui,sans-serif" font-weight="600" font-size="4.7" letter-spacing=".5" fill="#6E5039">FIG · DATE · WALNUT · KALONJI</text>
+    <text x="100.5" y="197" text-anchor="middle" font-family="Figtree,system-ui,sans-serif" font-size="5.4" letter-spacing="1.4" fill="#6E5039">OLIVE OIL SPREAD</text>
+    <rect x="31" y="72" width="7" height="150" rx="3.5" fill="#fff" opacity=".16"/>
+    <rect x="165" y="84" width="3" height="120" rx="1.5" fill="#fff" opacity=".1"/>
+  </symbol>
+
+  <symbol id="jar-top" viewBox="0 0 200 200">
+    <circle cx="100" cy="100" r="97" fill="#5A3D2A"/>
+    <circle cx="100" cy="100" r="86" fill="#27301C"/>
+    <circle cx="100" cy="100" r="78" fill="none" stroke="#1E2516" stroke-width="2"/>
+    <circle cx="100" cy="100" r="71" fill="none" stroke="#A8874F" stroke-width=".8" opacity=".75"/>
+    <text x="100" y="94" text-anchor="middle" font-family="'Aref Ruqaa','Amiri',serif" font-size="36" fill="#F7F2E7">تين</text>
+    <line x1="84" x2="116" y1="106" y2="106" stroke="#CDB384" stroke-width="1"/>
+    <text x="100" y="140" text-anchor="middle" font-family="'Aref Ruqaa','Amiri',serif" font-size="32" fill="#F7F2E7">زيتون</text>
+    <path d="M40 60 A70 70 0 0 1 70 34" stroke="#46532F" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </symbol>
+
+  <!-- ingredients -->
+  <symbol id="fig-half" viewBox="0 0 100 110">
+    <path d="M50 8 C58 8 60 18 64 28 C80 44 88 66 80 86 C72 104 28 104 20 86 C12 66 20 44 36 28 C40 18 42 8 50 8Z" fill="#5B3547"/>
+    <path d="M50 20 C56 30 58 36 62 41 C74 55 78 71 72 85 C66 97 34 97 28 85 C22 71 26 55 38 41 C42 36 44 30 50 20Z" fill="#EBD3B0"/>
+    <path d="M50 36 C56 46 66 54 68 67 C70 81 60 91 50 91 C40 91 30 81 32 67 C34 54 44 46 50 36Z" fill="#B24E47"/>
+    <g fill="#F0D9B5"><ellipse cx="44" cy="62" rx="1.4" ry="2"/><ellipse cx="56" cy="60" rx="1.4" ry="2"/><ellipse cx="50" cy="70" rx="1.4" ry="2"/><ellipse cx="42" cy="76" rx="1.4" ry="2"/><ellipse cx="58" cy="76" rx="1.4" ry="2"/><ellipse cx="50" cy="82" rx="1.4" ry="2"/><ellipse cx="38" cy="68" rx="1.2" ry="1.8"/><ellipse cx="62" cy="68" rx="1.2" ry="1.8"/><ellipse cx="50" cy="52" rx="1.2" ry="1.8"/></g>
+    <path d="M50 8 L50 1" stroke="#4A3A2A" stroke-width="3" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="fig-whole" viewBox="0 0 100 110">
+    <path d="M50 8 C58 8 60 18 64 28 C80 44 88 66 80 86 C72 104 28 104 20 86 C12 66 20 44 36 28 C40 18 42 8 50 8Z" fill="#5B3547"/>
+    <path d="M40 30 C30 50 28 74 36 96 M60 30 C70 50 72 74 64 96 M50 20 C48 50 48 76 50 100" stroke="#6F4659" stroke-width="2" fill="none"/>
+    <path d="M30 60 C28 70 30 80 34 86" stroke="#8A6377" stroke-width="3" fill="none" stroke-linecap="round" opacity=".7"/>
+    <path d="M50 8 L50 1" stroke="#4A3A2A" stroke-width="3" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="date" viewBox="0 0 100 50">
+    <path d="M8 26 C8 10 30 4 52 4 C76 4 94 12 94 25 C94 40 74 46 50 46 C26 46 8 42 8 26Z" fill="#6B3B1F"/>
+    <path d="M22 18 C36 14 54 16 70 12 M18 30 C36 26 58 30 80 24 M30 38 C44 36 60 38 74 34" stroke="#4A2612" stroke-width="1.4" fill="none" opacity=".75" stroke-linecap="round"/>
+    <path d="M26 12 C40 8 58 8 72 10" stroke="#9A6440" stroke-width="2.2" fill="none" opacity=".6" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="walnut" viewBox="0 0 100 90">
+    <path d="M50 4 C76 4 94 22 94 46 C94 70 74 86 50 86 C26 86 6 70 6 46 C6 22 24 4 50 4Z" fill="#8C6440"/>
+    <path d="M44 12 C28 14 15 29 17 46 C19 63 31 76 44 78 C38 67 40 58 34 52 C40 44 30 36 38 28 C42 24 40 18 44 12Z" fill="#C49A6C"/>
+    <path d="M56 12 C72 14 85 29 83 46 C81 63 69 76 56 78 C62 67 60 58 66 52 C60 44 70 36 62 28 C58 24 60 18 56 12Z" fill="#C49A6C"/>
+    <path d="M26 40 C30 44 32 50 28 56 M74 40 C70 44 68 50 72 56 M36 64 C38 68 36 72 38 74 M64 64 C62 68 64 72 62 74" stroke="#A57B50" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <path d="M50 10 L50 80" stroke="#6B4A2E" stroke-width="2.4"/>
+  </symbol>
+  <symbol id="kalonji" viewBox="0 0 60 40">
+    <g fill="#15170F">
+      <use href="#seed" transform="translate(8 22) rotate(10)"/><use href="#seed" transform="translate(14 16) rotate(70)"/><use href="#seed" transform="translate(18 26) rotate(-30)"/><use href="#seed" transform="translate(22 20) rotate(120)"/><use href="#seed" transform="translate(27 14) rotate(40)"/><use href="#seed" transform="translate(28 28) rotate(200)"/><use href="#seed" transform="translate(33 21) rotate(-60)"/><use href="#seed" transform="translate(36 31) rotate(15)"/><use href="#seed" transform="translate(40 17) rotate(100)"/><use href="#seed" transform="translate(44 25) rotate(-20)"/><use href="#seed" transform="translate(48 20) rotate(160)"/><use href="#seed" transform="translate(21 32) rotate(80)"/><use href="#seed" transform="translate(31 9) rotate(-10)"/><use href="#seed" transform="translate(52 29) rotate(50)"/><use href="#seed" transform="translate(12 30) rotate(140)"/><use href="#seed" transform="translate(38 11) rotate(30)"/>
+    </g>
+  </symbol>
+  <symbol id="olive-branch" viewBox="0 0 220 120">
+    <path d="M4 104 C60 84 120 60 216 18" stroke="#5E5638" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    <g fill="#6F7A4E"><use href="#leaf" transform="translate(30 95) rotate(-62)"/><use href="#leaf" transform="translate(86 74) rotate(-58)"/><use href="#leaf" transform="translate(142 50) rotate(-60)"/><use href="#leaf" transform="translate(196 27) rotate(-55)"/></g>
+    <g fill="#8C9566"><use href="#leaf" transform="translate(58 85) rotate(14)"/><use href="#leaf" transform="translate(114 62) rotate(10)"/><use href="#leaf" transform="translate(170 38) rotate(8)"/></g>
+    <use href="#leaf" transform="translate(204 23) rotate(-22) scale(.8)" fill="#6F7A4E"/>
+    <path d="M70 82 L72 90 M130 60 L128 68 M160 48 L163 56" stroke="#5E5638" stroke-width="1.4"/>
+    <ellipse cx="72" cy="97" rx="6.5" ry="9" fill="#33401F" transform="rotate(-15 72 97)"/>
+    <ellipse cx="128" cy="75" rx="6.5" ry="9" fill="#4E5A2C" transform="rotate(10 128 75)"/>
+    <ellipse cx="164" cy="63" rx="6" ry="8.5" fill="#2B3419" transform="rotate(-8 164 63)"/>
+    <g fill="#F7F2E7" opacity=".35"><ellipse cx="70" cy="93" rx="1.6" ry="2.4"/><ellipse cx="126" cy="71" rx="1.6" ry="2.4"/><ellipse cx="162" cy="59" rx="1.5" ry="2.2"/></g>
+  </symbol>
+  <symbol id="oil-drop" viewBox="0 0 40 56">
+    <path d="M20 2 C28 18 38 28 38 38 C38 48 30 54 20 54 C10 54 2 48 2 38 C2 28 12 18 20 2Z" fill="#B7A04A"/>
+    <path d="M11 38 C11 44 15 48 20 48" stroke="#E1CF83" stroke-width="2.4" fill="none" stroke-linecap="round" opacity=".8"/>
+  </symbol>
+
+  <!-- serving ideas -->
+  <symbol id="toast" viewBox="0 0 160 150">
+    <ellipse cx="80" cy="146" rx="62" ry="4" fill="#2E2218" opacity=".12"/>
+    <path d="M24 64 C10 44 20 12 50 10 C64 2 96 2 110 10 C140 12 150 44 136 64 L134 138 C134 144 130 146 124 146 L36 146 C30 146 26 144 26 138Z" fill="#A86F3C"/>
+    <path d="M34 66 C24 50 32 22 56 20 C68 13 92 13 104 20 C128 22 136 50 126 66 L124 132 C124 136 122 137 118 137 L42 137 C38 137 36 136 36 132Z" fill="#E6C995"/>
+    <g fill="#C79A5C"><ellipse cx="44" cy="128" rx="2.4" ry="1.4"/><ellipse cx="116" cy="126" rx="2.4" ry="1.4"/><ellipse cx="50" cy="34" rx="2.2" ry="1.3"/><ellipse cx="112" cy="36" rx="2.2" ry="1.3"/></g>
+    <path d="M42 58 C38 46 50 32 64 32 C80 28 98 30 108 38 C120 44 120 58 116 66 L116 122 C108 128 96 124 86 128 C70 132 56 126 44 128 Z" fill="#5A3D2A"/>
+    <path d="M50 52 C70 48 90 54 108 48 M48 80 C70 76 92 82 112 76 M50 106 C68 102 92 108 110 102" stroke="#74523A" stroke-width="3" fill="none" stroke-linecap="round" opacity=".7"/>
+    <g fill="#15170F"><circle cx="60" cy="64" r="1.1"/><circle cx="92" cy="60" r="1.1"/><circle cx="76" cy="92" r="1.1"/><circle cx="100" cy="98" r="1.1"/><circle cx="58" cy="112" r="1.1"/><circle cx="88" cy="118" r="1.1"/><circle cx="68" cy="44" r="1"/></g>
+    <g fill="#A57E58"><ellipse cx="80" cy="70" rx="2.4" ry="1.4"/><ellipse cx="64" cy="96" rx="2.4" ry="1.4"/><ellipse cx="104" cy="112" rx="2.2" ry="1.3"/></g>
+  </symbol>
+  <symbol id="bowl" viewBox="0 0 160 120">
+    <ellipse cx="80" cy="114" rx="56" ry="4" fill="#2E2218" opacity=".12"/>
+    <path d="M14 54 H146 C146 90 116 112 80 112 C44 112 14 90 14 54Z" fill="#F7F2E7" stroke="#CDBB9A" stroke-width="1.5"/>
+    <ellipse cx="80" cy="54" rx="66" ry="14" fill="#E4D8C0"/>
+    <ellipse cx="80" cy="55" rx="58" ry="10" fill="#EADBB8"/>
+    <g fill="#D4BC8B"><ellipse cx="40" cy="54" rx="5" ry="2"/><ellipse cx="54" cy="58" rx="5" ry="2" transform="rotate(20 54 58)"/><ellipse cx="112" cy="56" rx="5" ry="2" transform="rotate(-15 112 56)"/><ellipse cx="124" cy="52" rx="4" ry="1.8"/><ellipse cx="60" cy="50" rx="4" ry="1.8"/><ellipse cx="102" cy="61" rx="4" ry="1.8"/></g>
+    <path d="M68 52 C66 42 78 38 86 42 C96 40 102 50 96 55 C88 60 72 60 68 52Z" fill="#5A3D2A"/>
+    <circle cx="80" cy="48" r="1" fill="#15170F"/><circle cx="90" cy="50" r="1" fill="#15170F"/>
+    <path d="M104 44 C108 38 116 36 122 40 C124 46 118 52 110 52 C106 50 104 48 104 44Z" fill="#B24E47"/>
+    <path d="M106 44 C110 40 116 40 120 42" stroke="#EBD3B0" stroke-width="1.5" fill="none"/>
+  </symbol>
+  <symbol id="snack" viewBox="0 0 160 120">
+    <ellipse cx="80" cy="84" rx="74" ry="26" fill="#F7F2E7" stroke="#CDBB9A" stroke-width="1.5"/>
+    <ellipse cx="80" cy="84" rx="62" ry="19" fill="none" stroke="#E4D8C0" stroke-width="1"/>
+    <g transform="rotate(-10 62 72)"><rect x="34" y="56" width="52" height="34" rx="3" fill="#D6A96C"/><g fill="#B98A4F"><circle cx="44" cy="64" r="1.3"/><circle cx="60" cy="64" r="1.3"/><circle cx="76" cy="64" r="1.3"/><circle cx="44" cy="80" r="1.3"/><circle cx="60" cy="80" r="1.3"/><circle cx="76" cy="80" r="1.3"/></g><path d="M44 70 C52 64 68 64 76 70 C70 78 52 78 44 70Z" fill="#5A3D2A"/></g>
+    <g transform="translate(96 60) rotate(12)"><path d="M0 18 C8 0 36 -4 50 8 C36 6 16 8 0 18Z" fill="#EFE2BF" stroke="#A4453A" stroke-width="2.4" stroke-linejoin="round"/></g>
+    <g transform="translate(92 80) rotate(-4)"><path d="M0 18 C8 0 36 -4 50 8 C36 6 16 8 0 18Z" fill="#EFE2BF" stroke="#A4453A" stroke-width="2.4" stroke-linejoin="round"/></g>
+    <use href="#walnut" x="30" y="86" width="22" height="20"/>
+  </symbol>
+  <symbol id="spoon" viewBox="0 0 160 120">
+    <path d="M86 62 L150 16" stroke="#B8895A" stroke-width="8" stroke-linecap="round"/>
+    <path d="M86 62 L150 16" stroke="#CFA273" stroke-width="2.5" stroke-linecap="round" opacity=".7"/>
+    <ellipse cx="62" cy="76" rx="36" ry="24" fill="#B8895A" transform="rotate(-18 62 76)"/>
+    <ellipse cx="62" cy="76" rx="29" ry="18" fill="#A47547" transform="rotate(-18 62 76)"/>
+    <path d="M40 78 C38 64 52 56 64 60 C76 56 86 66 82 76 C78 86 50 90 40 78Z" fill="#5A3D2A"/>
+    <path d="M48 70 C56 66 68 68 76 66" stroke="#74523A" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    <g fill="#15170F"><circle cx="54" cy="76" r="1.1"/><circle cx="68" cy="80" r="1.1"/><circle cx="62" cy="68" r="1"/></g>
+    <ellipse cx="72" cy="74" rx="2.4" ry="1.4" fill="#A57E58"/>
+    <use href="#kalonji" x="100" y="80" width="42" height="28"/>
+  </symbol>
+
+  <!-- scenes -->
+  <symbol id="scene-hero" viewBox="0 0 520 620">
+    <rect width="520" height="620" fill="#E4D8C0"/>
+    <g fill="#F7F2E7" opacity=".4"><polygon points="330,0 420,0 170,620 80,620"/><polygon points="455,0 500,0 250,620 205,620"/></g>
+    <rect y="470" width="520" height="150" fill="#D6C6A6"/>
+    <path d="M30 512 Q260 480 490 512 L482 592 Q260 616 38 592 Z" fill="#A9825A"/>
+    <path d="M30 512 Q260 480 490 512" stroke="#C09A6E" stroke-width="3" fill="none"/>
+    <g stroke="#93704C" stroke-width="1.2" fill="none" opacity=".55"><path d="M60 540 Q260 520 460 540"/><path d="M50 562 Q260 546 470 562"/><path d="M70 580 Q260 568 450 580"/></g>
+    <use href="#olive-branch" width="264" height="144" transform="translate(562 128) rotate(180)"/>
+    <use href="#olive-branch" x="300" y="402" width="220" height="120" transform="rotate(-6 410 462)"/>
+    <use href="#fig-whole" x="96" y="428" width="78" height="86"/>
+    <use href="#date" x="370" y="484" width="70" height="35"/>
+    <path d="M178 520 L70 566 Q160 580 262 530Z" fill="#3A2A1E" opacity=".1"/>
+    <ellipse cx="262" cy="526" rx="98" ry="11" fill="#3A2A1E" opacity=".2"/>
+    <use href="#jar" x="152" y="256" width="220" height="275"/>
+    <ellipse cx="455" cy="552" rx="44" ry="15" fill="#EFE7D6" stroke="#CDBB9A"/>
+    <ellipse cx="455" cy="550" rx="34" ry="10" fill="#B7A04A"/>
+    <ellipse cx="446" cy="547" rx="10" ry="2.5" fill="#E1CF83" opacity=".7"/>
+    <path d="M455 0 C455 200 455 400 455 547" stroke="#B7A04A" stroke-width="2.2" fill="none" opacity=".8"/>
+    <use href="#fig-half" x="58" y="498" width="84" height="92" transform="rotate(-14 100 544)"/>
+    <use href="#fig-half" x="148" y="528" width="62" height="68" transform="rotate(16 179 562)"/>
+    <use href="#walnut" x="236" y="552" width="54" height="49"/>
+    <use href="#walnut" x="18" y="562" width="46" height="41" transform="rotate(-20 41 582)"/>
+    <use href="#date" x="302" y="552" width="82" height="41" transform="rotate(-8 343 572)"/>
+    <use href="#kalonji" x="372" y="580" width="66" height="44"/>
+    <use href="#kalonji" x="196" y="590" width="40" height="27"/>
+  </symbol>
+
+  <symbol id="scene-flatlay" viewBox="0 0 600 600">
+    <rect width="600" height="600" fill="#E4D8C0"/>
+    <g fill="#F7F2E7" opacity=".35"><polygon points="380,0 470,0 150,600 60,600"/></g>
+    <circle cx="300" cy="300" r="262" fill="#EFE7D6"/>
+    <circle cx="300" cy="300" r="262" fill="none" stroke="#CDBB9A" stroke-width="2"/>
+    <circle cx="300" cy="300" r="236" fill="none" stroke="#DCCDB1"/>
+    <circle cx="306" cy="308" r="98" fill="#2E2218" opacity=".12"/>
+    <use href="#jar-top" x="205" y="205" width="190" height="190"/>
+    <use href="#fig-half" x="258" y="60" width="84" height="92"/>
+    <use href="#fig-whole" x="352" y="92" width="56" height="62" transform="rotate(25 380 123)"/>
+    <use href="#walnut" x="432" y="248" width="74" height="67"/>
+    <use href="#walnut" x="418" y="330" width="48" height="43" transform="rotate(30 442 351)"/>
+    <use href="#date" x="360" y="420" width="96" height="48" transform="rotate(-35 408 444)"/>
+    <use href="#date" x="300" y="470" width="80" height="40" transform="rotate(-10 340 490)"/>
+    <circle cx="190" cy="440" r="46" fill="#F7F2E7" stroke="#CDBB9A"/>
+    <use href="#kalonji" x="158" y="420" width="64" height="42"/>
+    <circle cx="128" cy="274" r="44" fill="#F7F2E7" stroke="#CDBB9A"/>
+    <circle cx="128" cy="274" r="33" fill="#B7A04A"/>
+    <ellipse cx="118" cy="264" rx="10" ry="5" fill="#E1CF83" opacity=".6"/>
+    <use href="#olive-branch" x="44" y="70" width="230" height="125" transform="rotate(18 159 132)"/>
+    <use href="#kalonji" x="250" y="402" width="40" height="27"/>
+  </symbol>
+
+  <symbol id="pack-back" viewBox="0 0 500 560">
+    <rect width="500" height="560" fill="#E4D8C0"/>
+    <g fill="#F7F2E7" opacity=".4"><polygon points="320,0 400,0 170,560 90,560"/></g>
+    <rect x="90" y="452" width="320" height="120" fill="#D3C3A2"/>
+    <ellipse cx="250" cy="452" rx="160" ry="24" fill="#DDCFB2"/>
+    <use href="#olive-branch" width="230" height="125" transform="translate(530 110) rotate(180)"/>
+  </symbol>
+  <symbol id="pack-front" viewBox="0 0 500 560">
+    <use href="#fig-half" x="80" y="392" width="72" height="79" transform="rotate(-12 116 431)"/>
+    <use href="#walnut" x="352" y="414" width="58" height="52"/>
+    <use href="#kalonji" x="296" y="444" width="50" height="33"/>
+  </symbol>
+</defs>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="logo" href="#home" aria-label="Tin Zaitoon, home">
+      <span class="logo-ar" lang="ar" dir="rtl"><span>تين</span><i class="bar" aria-hidden="true"></i><span>زيتون</span></span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#story">Our Story</a>
+      <a href="#ingredients">Ingredients</a>
+      <a href="#enjoy">How to Enjoy</a>
+    </nav>
+    <div class="header-actions">
+      <span class="co-flag"><svg class="ico" aria-hidden="true"><use href="#i-lock"/></svg>Secure checkout</span>
+      <button class="icon-btn cart-btn" type="button" data-open-cart aria-label="Open cart"><svg class="ico" aria-hidden="true"><use href="#i-bag"/></svg><span class="count" data-count data-n="0">0</span></button>
+      <a class="btn btn-primary btn-sm header-cta" href="#shop">Shop Wateen</a>
+      <button class="icon-btn menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu"><svg class="ico" aria-hidden="true"><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile" hidden>
+    <a href="#story">Our Story</a>
+    <a href="#ingredients">Ingredients</a>
+    <a href="#enjoy">How to Enjoy</a>
+    <a href="#faq">FAQs</a>
+    <a class="btn btn-primary" href="#shop">Shop Wateen</a>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- ============ HOME ============ -->
+<div class="page" data-page="home">
+
+  <section class="hero" data-shopify="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Inspired by the timeless foods of At-Tin &amp; Az-Zaitoon</p>
+        <h1 class="display h1">A Better Spread for <em>Everyday Moments.</em></h1>
+        <p class="lead">A wholesome blend of figs, dates, walnuts, kalonji and extra virgin olive oil, crafted into a naturally rich spread for your everyday breakfast and snacks.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#shop">Try Wateen</a>
+          <p class="from-price">From <strong class="ph" data-from-price>Rs 1,450</strong><br>Free delivery on 500 g, or with Bank Transfer</p>
+        </div>
+        <a class="link-arrow" href="#ingredients">Explore the Ingredients <svg class="ico" aria-hidden="true"><use href="#i-down"/></svg></a>
+        <div class="inside">
+          <span class="inside-label">What's inside</span>
+          <ul class="inside-list">
+            <li><svg viewBox="0 0 100 110" aria-hidden="true"><use href="#fig-half"/></svg>Figs</li>
+            <li><svg viewBox="0 0 100 50" aria-hidden="true"><use href="#date"/></svg>Dates</li>
+            <li><svg viewBox="0 0 100 90" aria-hidden="true"><use href="#walnut"/></svg>Walnuts</li>
+            <li><svg viewBox="0 0 60 40" aria-hidden="true"><use href="#kalonji"/></svg>Kalonji</li>
+            <li><svg viewBox="0 0 40 56" aria-hidden="true"><use href="#oil-drop"/></svg>Extra virgin olive oil</li>
+          </ul>
+        </div>
+      </div>
+      <figure class="hero-figure">
+        <div class="arch-wrap">
+          <div class="arch">
+            <svg viewBox="0 0 520 620" role="img" aria-label="A Wateen jar on a wooden board surrounded by fresh and dried figs, dates, walnuts, kalonji seeds, olive branches and a small dish of olive oil"><use href="#scene-hero" width="520" height="620"/></svg>
+            <span class="tag">Everyday Jar · 250 g</span>
+          </div>
+        </div>
+        <aside class="note"><b>Shot 01 · Hero.</b> 250 g jar, three-quarter angle, on a handmade wooden board over cream linen. Fresh and dried figs (one halved), dates, walnut halves, a kalonji scatter, olive branch entering top right, a thin olive oil pour into a small ceramic dish. Late-morning window light from the right, soft warm shadows. Export 4:5 at 1600 and 800 px, WebP/AVIF, eager-loaded with fetchpriority=high.</aside>
+      </figure>
+    </div>
+  </section>
+
+  <section class="trust" aria-label="Product highlights" data-shopify="highlights-bar">
+    <div class="wrap">
+      <ul>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-five"/></svg>5 Simple Ingredients</li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-nosugar"/></svg>No Added Sugar</li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-drop"/></svg>Made With Extra Virgin Olive Oil</li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-leaf"/></svg>No Artificial Additives</li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-spoon"/></svg>Made for Everyday Enjoyment</li>
+      </ul>
+      <aside class="note"><b>Claims.</b> "No Added Sugar" and "No Artificial Additives" display only once confirmed by the final production formulation and lab testing. Controlled per claim in CONFIG.claims.</aside>
+    </div>
+  </section>
+
+  <section class="section shop" id="shop" aria-labelledby="buy-home-title" data-shopify="main-product">
+    <div class="wrap shop-grid">
+      <figure class="shop-figure">
+        <div class="arch-wrap">
+          <div class="arch">
+            <svg viewBox="0 0 500 560" role="img" aria-label="Wateen jar on a stone plinth with a halved fig, walnut and kalonji">
+              <use href="#pack-back" width="500" height="560"/>
+              <g class="jar-scale" style="transform-box:fill-box;transform-origin:50% 100%;transition:transform .5s cubic-bezier(.2,.7,.2,1)"><use href="#jar" x="140" y="180" width="220" height="275"/></g>
+              <use href="#pack-front" width="500" height="560"/>
+            </svg>
+          </div>
+        </div>
+        <figcaption class="shown">Shown: <span data-shown>250 g · Everyday Jar</span></figcaption>
+        <aside class="note"><b>Shot 02 · Packshots.</b> Front-facing jar in all three sizes on cream seamless, identical light and shadow, so the image swaps on variant change. Square and 4:5 crops, 1200 px WebP. The jar scales here to hint at size until real photos land.</aside>
+      </figure>
+      <div class="buy-card" data-buy="home" data-details="true"></div>
+    </div>
+  </section>
+
+  <section class="section" id="ingredients" aria-labelledby="ing-title" data-shopify="ingredients">
+    <div class="wrap">
+      <div class="ing-head">
+        <div class="stack">
+          <p class="eyebrow">Why Wateen?</p>
+          <h2 class="display h2" id="ing-title">Five Ingredients. <em>One Beautiful Blend.</em></h2>
+        </div>
+        <p class="lead">Nothing is here to fill space. Each ingredient brings its own taste and texture, and together they make one smooth, naturally rich spread.</p>
+      </div>
+      <ul class="ing-grid">
+        <li class="ing"><div class="ing-plate"><svg viewBox="0 0 100 110" aria-hidden="true"><use href="#fig-half"/></svg></div><div><span class="ing-ur" lang="ur">انجیر</span><h3>Figs</h3><p>Naturally rich and naturally sweet.</p></div></li>
+        <li class="ing"><div class="ing-plate"><svg viewBox="0 0 100 50" aria-hidden="true"><use href="#date"/></svg></div><div><span class="ing-ur" lang="ur">کھجور</span><h3>Dates</h3><p>A naturally sweet source of energy and texture.</p></div></li>
+        <li class="ing"><div class="ing-plate"><svg viewBox="0 0 100 90" aria-hidden="true"><use href="#walnut"/></svg></div><div><span class="ing-ur" lang="ur">اخروٹ</span><h3>Walnuts</h3><p>Rich, nutty and naturally satisfying.</p></div></li>
+        <li class="ing"><div class="ing-plate"><svg viewBox="0 0 60 40" aria-hidden="true"><use href="#kalonji"/></svg></div><div><span class="ing-ur" lang="ur">کلونجی</span><h3>Kalonji</h3><p>A distinctive traditional seed with a bold, earthy character.</p></div></li>
+        <li class="ing"><div class="ing-plate"><svg viewBox="0 0 40 56" aria-hidden="true" style="width:38%"><use href="#oil-drop"/></svg></div><div><span class="ing-ur" lang="ur">زیتون کا تیل</span><h3>Olive Oil</h3><p>Extra virgin olive oil brings everything together into a smooth, rich spread.</p></div></li>
+      </ul>
+      <aside class="note"><b>Shots 03 to 07 · Ingredient cut-outs.</b> Each ingredient photographed top-down on cream, background removed, 800 px transparent WebP, to replace the illustrations inside the plates. Urdu names are decorative (aria labels stay English).</aside>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0" aria-labelledby="story-title" data-shopify="image-with-text">
+    <div class="wrap story-grid">
+      <figure>
+        <div class="frame flatlay"><svg viewBox="0 0 600 600" role="img" aria-label="Top-down view of a Wateen jar on a ceramic platter, ringed by a halved fig, walnuts, dates, a dish of kalonji, a dish of olive oil and an olive branch"><use href="#scene-flatlay" width="600" height="600"/></svg></div>
+        <aside class="note"><b>Shot 08 · Flat lay.</b> Overhead, jar centred on a large handmade ceramic platter, the five ingredients arranged loosely around it. Natural, not symmetrical. 1:1, 1400 px.</aside>
+      </figure>
+      <div class="stack">
+        <p class="eyebrow">The ingredient story</p>
+        <h2 class="display h2" id="story-title">From Timeless Ingredients to Your Everyday Table</h2>
+        <p class="body-l">Wateen is inspired by the simple beauty of foods that have been valued across generations. We bring together figs, dates, walnuts, kalonji and olive oil into one convenient spread, keeping the ingredient list simple and the experience delicious.</p>
+        <p class="ing-names"><span>Fig</span><span>Date</span><span>Walnut</span><span>Kalonji</span><span>Olive oil</span></p>
+        <a class="link-arrow" href="#story">Read our story <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section verse on-dark" aria-labelledby="verse-title" data-shopify="inspiration">
+    <div class="wrap verse-inner">
+      <h2 id="verse-title">Inspired by At-Tin &amp; Az-Zaitoon</h2>
+      <p class="verse-ar" lang="ar" dir="rtl">والتين والزيتون</p>
+      <div class="verse-rule" aria-hidden="true"><i></i></div>
+      <p class="verse-tr">&ldquo;By the fig and the olive.&rdquo;</p>
+      <p class="verse-cite">Surah At-Tin, 95:1</p>
+      <p class="verse-body">Our mark, Tin and Zaitoon, draws inspiration from the Qur'anic mention of the fig and the olive, two timeless ingredients that inspire the spirit behind our first blend.</p>
+      <aside class="note"><b>Respect rule.</b> No CTA, price or product imagery in this section. The verse is never used on packaging or ads without religious review.</aside>
+    </div>
+  </section>
+
+  <section class="section" id="enjoy" aria-labelledby="enjoy-title" data-shopify="serving-ideas">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="stack">
+          <p class="eyebrow">How to enjoy</p>
+          <h2 class="display h2" id="enjoy-title">Your Daily Wateen Ritual</h2>
+        </div>
+        <p class="lead">Four easy ways to bring it to the table, from a slow breakfast to a quick bite between meetings.</p>
+      </div>
+      <div data-slot="enjoy"></div>
+      <aside class="note"><b>Shots 09 to 12 · Serving ideas.</b> Four lifestyle images, same table and light as the hero for consistency. 5:4, 1000 px, lazy-loaded.</aside>
+    </div>
+  </section>
+
+  <section class="section texture on-dark" aria-labelledby="texture-title" data-shopify="texture">
+    <div class="wrap texture-grid">
+      <div>
+        <h2 id="texture-title"><span>Rich.</span><span>Nutty.</span><span>Fruity.</span><em>Naturally Satisfying.</em></h2>
+        <dl class="notes">
+          <div><dt>Rich</dt><dd>Extra virgin olive oil and walnuts give it body.</dd></div>
+          <div><dt>Nutty</dt><dd>Walnut, with an earthy lift from kalonji.</dd></div>
+          <div><dt>Fruity</dt><dd>Figs and dates bring natural sweetness.</dd></div>
+        </dl>
+      </div>
+      <div class="texture-art">
+        <svg viewBox="0 0 800 480" role="img" aria-label="Wateen being spread across a slice of warm multigrain bread">
+          <ellipse cx="400" cy="452" rx="290" ry="18" fill="#000" opacity=".35"/>
+          <path d="M170 170 C120 110 160 30 260 34 C300 14 500 14 540 34 C640 30 680 110 630 170 L622 420 C622 436 612 444 596 444 L204 444 C188 444 178 436 178 420 Z" fill="#A86F3C"/>
+          <path d="M196 176 C156 124 190 58 270 60 C310 42 490 42 530 60 C610 58 644 124 604 176 L598 410 C598 420 592 424 582 424 L218 424 C208 424 202 420 202 410 Z" fill="#E6C995"/>
+          <g id="grains"></g>
+          <g class="spread-g">
+            <path d="M214 150 C204 110 250 78 300 84 C360 70 440 72 500 82 C556 76 596 110 588 150 L584 386 C560 402 520 392 480 400 C430 410 380 398 330 404 C280 410 240 398 216 390 Z" fill="#5A3D2A"/>
+            <g stroke="#74523A" stroke-width="7" fill="none" stroke-linecap="round" opacity=".6"><path d="M236 150 C320 138 430 160 566 140"/><path d="M232 222 C330 210 440 232 572 214"/><path d="M234 292 C330 282 450 300 570 284"/><path d="M238 356 C330 346 440 362 560 350"/></g>
+            <g id="specks"></g>
+          </g>
+          <g class="knife-move">
+            <g transform="rotate(-14 200 260)">
+              <rect x="190" y="-30" width="28" height="170" rx="9" fill="#6E5039"/>
+              <rect x="196" y="-20" width="4" height="150" rx="2" fill="#8A6A4E" opacity=".7"/>
+              <rect x="191" y="134" width="26" height="12" rx="2" fill="#A9A395"/>
+              <path d="M193 146 L215 146 C226 210 226 300 212 378 C206 392 194 392 188 378 C176 300 180 210 193 146Z" fill="#D3CEC2"/>
+              <path d="M198 160 C194 220 192 300 196 370" stroke="#F2EFE7" stroke-width="2.4" fill="none" opacity=".7"/>
+              <path d="M186 330 C180 350 184 372 196 384 C206 390 214 380 212 366 C204 360 194 346 186 330Z" fill="#5A3D2A"/>
+            </g>
+          </g>
+          <g id="particles" fill="#15170F"></g>
+        </svg>
+        <aside class="note"><b>Shot 13 · Texture loop.</b> Macro video: knife spreading Wateen across warm multigrain toast, 6 s loop, muted, autoplay, playsinline. 720p WebM + MP4 under 1.5 MB with a poster frame. Falls back to the still under prefers-reduced-motion.</aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="not-title" data-shopify="not-inside">
+    <div class="wrap not-grid">
+      <div class="stack">
+        <p class="eyebrow">What's not inside</p>
+        <h2 class="display h2" id="not-title">Simple Ingredients. <em>Nothing Unnecessary.</em></h2>
+        <p class="lead">Read the label in five seconds. That is the point.</p>
+        <aside class="note"><b>Claims gate.</b> Each line renders only if confirmed by the final production formulation and testing (CONFIG.claims). Remove any that are not verified before launch.</aside>
+      </div>
+      <ul class="checklist" data-checklist></ul>
+    </div>
+  </section>
+
+  <section class="section brand" aria-labelledby="brand-title" data-shopify="brand-story">
+    <span class="watermark" aria-hidden="true" lang="ar" dir="rtl">تين<br>زيتون</span>
+    <div class="wrap brand-grid">
+      <div class="stack">
+        <p class="eyebrow">Our story</p>
+        <h2 class="display h2" id="brand-title">Why Wateen?</h2>
+        <blockquote>We wanted to create something simple enough for everyday life, yet meaningful enough to remember.</blockquote>
+      </div>
+      <div class="stack" style="padding-top:clamp(0px,4vw,56px)">
+        <p class="body-l">Wateen began with a simple idea: bring together naturally wholesome ingredients into a spread that feels familiar, nourishing and effortless to enjoy.</p>
+        <p class="body-l">Inspired by the timeless mention of the fig and olive, Wateen is our interpretation of a modern everyday food rooted in simplicity and heritage.</p>
+        <div><a class="btn btn-ghost" href="#story">Discover Wateen</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reviews" aria-labelledby="reviews-title" data-shopify="reviews">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="stack">
+          <p class="eyebrow">Reviews</p>
+          <h2 class="display h2" id="reviews-title">Loved at Breakfast. <em>Shared at Home.</em></h2>
+        </div>
+      </div>
+      <div data-slot="reviews"></div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0" aria-labelledby="faq-home-title" data-shopify="faq">
+    <div class="wrap faq-grid">
+      <div class="stack">
+        <p class="eyebrow">FAQs</p>
+        <h2 class="display h2" id="faq-home-title">Good to Know</h2>
+        <p class="lead">Honest answers, including the ones we are still validating.</p>
+        <a class="link-arrow" href="#faq">All FAQs <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div data-slot="faq"></div>
+    </div>
+  </section>
+
+  <section class="section final" aria-labelledby="final-title" data-shopify="final-cta">
+    <div class="wrap final-grid">
+      <div class="stack">
+        <h2 class="display" id="final-title">Bring Wateen <em>to Your Table.</em></h2>
+        <p class="lead">Five simple ingredients. One naturally rich spread. Made for everyday moments.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#shop">Shop Wateen</a>
+          <ul class="reassure" data-reassure></ul>
+        </div>
+      </div>
+      <figure class="final-figure">
+        <div class="arch-wrap"><div class="arch">
+          <svg viewBox="110 220 330 380" role="img" aria-label="Close view of the Wateen jar with figs, walnuts and dates"><use href="#scene-hero" width="520" height="620"/></svg>
+        </div></div>
+        <aside class="note"><b>Shot 14 · Closing image.</b> Tighter crop of the hero set, or a hand reaching for the jar at a breakfast table.</aside>
+      </figure>
+    </div>
+  </section>
+</div>
+
+<!-- ============ PRODUCT ============ -->
+<div class="page" data-page="product" hidden>
+  <div class="wrap page-top">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="#home">Home</a><span aria-hidden="true">/</span><a href="#product">Shop</a><span aria-hidden="true">/</span><span aria-current="page">Wateen Olive Oil Spread</span></nav>
+  </div>
+  <section class="wrap pdp-grid" data-shopify="main-product" style="padding-bottom:clamp(64px,8vw,112px)">
+    <div>
+      <div class="gallery-main" data-gallery-main></div>
+      <div class="thumbs" role="group" aria-label="Product images" data-thumbs></div>
+      <aside class="note"><b>Gallery.</b> Maps to product.media in Shopify. Order: packshot, flat lay, on toast, size lineup. Swipeable on mobile.</aside>
+    </div>
+    <div class="pdp-buy">
+      <div class="buy-plain" data-buy="pdp" data-h1="true"></div>
+      <div class="spec">
+        <details open><summary>Ingredients<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="faq-a"><p>Dried figs, dates, walnuts, kalonji (nigella seeds), extra virgin olive oil.</p><p><strong>Contains:</strong> walnuts (tree nuts).</p><aside class="note"><b>Pending.</b> Ingredient percentages and any cross-contact statement come from the final formulation and facility review.</aside></div></details>
+        <details><summary>Nutrition<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="faq-a"><div class="nut-wrap"><table class="nut"><caption class="sr-only">Nutrition per 100 g</caption><thead><tr><th scope="col">Per 100 g</th><th scope="col">Value</th></tr></thead><tbody><tr><td>Energy</td><td>Pending lab analysis</td></tr><tr><td>Fat</td><td>Pending lab analysis</td></tr><tr><td>of which saturates</td><td>Pending lab analysis</td></tr><tr><td>Carbohydrate</td><td>Pending lab analysis</td></tr><tr><td>of which sugars</td><td>Pending lab analysis</td></tr><tr><td>Fibre</td><td>Pending lab analysis</td></tr><tr><td>Protein</td><td>Pending lab analysis</td></tr><tr><td>Salt</td><td>Pending lab analysis</td></tr></tbody></table></div></div></details>
+        <details><summary>Storage &amp; shelf life<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="faq-a"><p>Validated storage instructions and shelf life will be published here and printed on every jar once food-safety and stability testing of the final formulation is complete.</p><span class="pending">Pending validation</span></div></details>
+        <details><summary>Delivery &amp; returns<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="faq-a"><p data-ship-summary></p><p><a href="#shipping">Shipping policy</a> · <a href="#returns">Returns policy</a></p></div></details>
+      </div>
+    </div>
+  </section>
+  <section class="section" style="background:var(--cream)" aria-labelledby="pdp-enjoy" data-shopify="serving-ideas">
+    <div class="wrap">
+      <div class="sec-head"><div class="stack"><p class="eyebrow">How to enjoy</p><h2 class="display h2" id="pdp-enjoy">Your Daily Wateen Ritual</h2></div></div>
+      <div data-slot="enjoy"></div>
+    </div>
+  </section>
+  <section class="section" aria-labelledby="pdp-reviews" data-shopify="reviews">
+    <div class="wrap">
+      <div class="sec-head"><div class="stack"><p class="eyebrow">Reviews</p><h2 class="display h2" id="pdp-reviews">Loved at Breakfast. <em>Shared at Home.</em></h2></div></div>
+      <div data-slot="reviews"></div>
+    </div>
+  </section>
+  <section class="section" style="padding-top:0" aria-labelledby="pdp-faq" data-shopify="faq">
+    <div class="wrap faq-grid">
+      <div class="stack"><p class="eyebrow">FAQs</p><h2 class="display h2" id="pdp-faq">Good to Know</h2></div>
+      <div data-slot="faq"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ CART ============ -->
+<div class="page" data-page="cart" hidden>
+  <div class="wrap page-top">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="#home">Home</a><span aria-hidden="true">/</span><span aria-current="page">Cart</span></nav>
+    <h1 class="display h2" style="margin-top:18px">Your Cart</h1>
+  </div>
+  <section class="wrap" style="padding-bottom:clamp(64px,8vw,112px)" data-shopify="main-cart">
+    <div data-cart-page></div>
+  </section>
+</div>
+
+<!-- ============ CHECKOUT ============ -->
+<div class="page" data-page="checkout" hidden>
+  <div class="wrap page-top">
+    <nav class="crumbs" aria-label="Checkout steps"><a href="#cart">Cart</a><span aria-hidden="true">/</span><span aria-current="step">Details &amp; payment</span><span aria-hidden="true">/</span><span>Confirmation</span></nav>
+    <h1 class="display h2" style="margin-top:18px">Checkout</h1>
+    <aside class="note"><b>Checkout.</b> In production this is Shopify Checkout (customised via checkout branding). Layout mirrors it so the UX does not change at hand-off: no nav, no footer links beyond policies.</aside>
+  </div>
+  <section class="wrap" style="padding-bottom:clamp(64px,8vw,112px)">
+    <div data-checkout></div>
+  </section>
+</div>
+
+<!-- ============ CONFIRMED ============ -->
+<div class="page" data-page="confirmed" hidden>
+  <section class="wrap narrow" style="padding-block:clamp(48px,7vw,96px)">
+    <div data-confirmed></div>
+  </section>
+</div>
+
+<!-- ============ STORY ============ -->
+<div class="page" data-page="story" hidden>
+  <section class="wrap story-hero" data-shopify="page-story-hero">
+    <span class="big-ar" lang="ar" dir="rtl" aria-hidden="true"><span>تين</span><i></i><span>زيتون</span></span>
+    <div class="stack">
+      <p class="eyebrow">Our Story</p>
+      <h1 class="display h1">Why Wateen?</h1>
+      <p class="lead">We wanted to create something simple enough for everyday life, yet meaningful enough to remember.</p>
+    </div>
+  </section>
+  <section class="section" style="padding-top:0">
+    <div class="wrap story-grid">
+      <figure><div class="frame flatlay"><svg viewBox="0 0 600 600" role="img" aria-label="Wateen jar surrounded by its five ingredients"><use href="#scene-flatlay" width="600" height="600"/></svg></div></figure>
+      <div class="stack">
+        <h2 class="display h3">A simple idea</h2>
+        <p class="body-l">Wateen began with a simple idea: bring together naturally wholesome ingredients into a spread that feels familiar, nourishing and effortless to enjoy.</p>
+        <h2 class="display h3" style="margin-top:12px">The name</h2>
+        <p class="body-l">Inspired by the timeless mention of the fig and olive, Wateen is our interpretation of a modern everyday food rooted in simplicity and heritage.</p>
+      </div>
+    </div>
+  </section>
+  <section class="section verse on-dark" aria-labelledby="story-verse">
+    <div class="wrap verse-inner">
+      <h2 id="story-verse">Inspired by At-Tin &amp; Az-Zaitoon</h2>
+      <p class="verse-ar" lang="ar" dir="rtl">والتين والزيتون</p>
+      <div class="verse-rule" aria-hidden="true"><i></i></div>
+      <p class="verse-tr">&ldquo;By the fig and the olive.&rdquo;</p>
+      <p class="verse-cite">Surah At-Tin, 95:1</p>
+    </div>
+  </section>
+  <section class="section" aria-labelledby="principles-title">
+    <div class="wrap">
+      <div class="sec-head"><div class="stack"><p class="eyebrow">What we hold to</p><h2 class="display h2" id="principles-title">Three Simple Principles</h2></div></div>
+      <div class="principles">
+        <div><h3>Short ingredient lists</h3><p>Five ingredients you can name, see and taste. If it doesn't add to the spread, it doesn't go in the jar.</p></div>
+        <div><h3>Food first</h3><p>Wateen is a wholesome everyday food, made to be enjoyed. We don't make medical promises, and we never will.</p></div>
+        <div><h3>Heritage, made modern</h3><p>Rooted in ingredients valued for generations, made for how people eat today: quickly, well, and together.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="section" style="padding-top:0" aria-labelledby="founder-title">
+    <div class="wrap story-grid">
+      <div class="slot-ph">Founder or kitchen photograph<br>4:3, natural light</div>
+      <div class="stack">
+        <p class="eyebrow">Behind the jar</p>
+        <h2 class="display h3" id="founder-title">The people who make Wateen</h2>
+        <p class="body-l">A short, first-person note from the founders about why they started Wateen and how each batch is made.</p>
+        <aside class="note"><b>Content needed.</b> Founder story, production details and location. Not written here to avoid inventing facts.</aside>
+        <div><a class="btn btn-primary" href="#shop">Shop Wateen</a></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ FAQ ============ -->
+<div class="page" data-page="faq" hidden>
+  <div class="wrap page-top">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="#home">Home</a><span aria-hidden="true">/</span><span aria-current="page">FAQs</span></nav>
+    <h1 class="display h1" style="margin-top:18px">FAQs</h1>
+  </div>
+  <section class="wrap faq-page" style="padding-bottom:clamp(64px,8vw,112px)" data-shopify="page-faq">
+    <nav class="toc" aria-label="FAQ sections"><a href="#faq-product">About Wateen</a><a href="#faq-orders">Orders &amp; delivery</a><a href="#faq-returns">Returns</a></nav>
+    <div>
+      <div class="faq-group" id="faq-product"><h2>About Wateen</h2><div data-slot="faq"></div></div>
+      <div class="faq-group" id="faq-orders"><h2>Orders &amp; delivery</h2><div class="faq-list" data-faq-orders></div></div>
+      <div class="faq-group" id="faq-returns"><h2>Returns</h2><div class="faq-list">
+        <details><summary>Can I return an opened jar?<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="faq-a"><p>Because Wateen is a food product, we can't accept returns of opened jars. If something is wrong with your order, please contact us and we will make it right.</p><p><a href="#returns">Read the returns policy</a></p></div></details>
+        <details><summary>My jar arrived damaged. What should I do?<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="faq-a"><p>Send us a photo of the jar and packaging within <span class="ph">48 hours</span> of delivery through the <a href="#contact">Contact</a> page, and we will replace it or refund you.</p></div></details>
+      </div></div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ CONTACT ============ -->
+<div class="page" data-page="contact" hidden>
+  <div class="wrap page-top">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="#home">Home</a><span aria-hidden="true">/</span><span aria-current="page">Contact</span></nav>
+    <h1 class="display h1" style="margin-top:18px">Contact</h1>
+    <p class="lead" style="margin-top:14px">Questions about an order, the ingredients or wholesale? We read every message.</p>
+  </div>
+  <section class="wrap contact-grid" style="padding-bottom:clamp(64px,8vw,112px)" data-shopify="contact-form">
+    <form class="fields" data-contact novalidate>
+      <div class="field-row">
+        <div class="field"><label for="ct-name">Name</label><input id="ct-name" name="name" autocomplete="name" required></div>
+        <div class="field"><label for="ct-email">Email</label><input id="ct-email" name="email" type="email" autocomplete="email" required></div>
+      </div>
+      <div class="field"><label for="ct-topic">Topic</label><select id="ct-topic" name="topic"><option>An existing order</option><option>Ingredients &amp; allergens</option><option>Wholesale</option><option>Something else</option></select></div>
+      <div class="field"><label for="ct-msg">Message</label><textarea id="ct-msg" name="message" required></textarea></div>
+      <div><button class="btn btn-primary" type="submit">Send message</button></div>
+      <p class="form-msg" data-contact-msg hidden></p>
+    </form>
+    <aside class="contact-card">
+      <div><h3>Email</h3><div class="copy-row"><span class="ph">hello@wateen.pk</span><button class="copy-btn" type="button" data-copy="hello@wateen.pk">Copy</button></div></div>
+      <div><h3>WhatsApp</h3><div class="copy-row"><span>0336 4464822</span><button class="copy-btn" type="button" data-copy="03364464822">Copy</button></div><a class="link-arrow" style="margin-top:10px;font-size:14px" href="https://wa.me/923364464822" target="_blank" rel="noopener">Chat on WhatsApp <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      <div><h3>Hours</h3><p class="ph">Monday to Saturday, 10 am to 6 pm PKT</p></div>
+      <aside class="note"><b>Placeholder details.</b> Replace with real contact channels.</aside>
+    </aside>
+  </section>
+</div>
+
+<!-- ============ POLICY ============ -->
+<div class="page" data-page="policy" hidden>
+  <div class="wrap page-top">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="#home">Home</a><span aria-hidden="true">/</span><span aria-current="page" data-policy-crumb>Policy</span></nav>
+    <h1 class="display h1" style="margin-top:18px" data-policy-title>Policy</h1>
+    <p class="small" style="margin-top:10px" data-policy-updated></p>
+    <aside class="note"><b>Draft template.</b> Structure and plain-language drafts only. Review with a legal advisor before launch. Maps to Shopify Settings › Policies.</aside>
+  </div>
+  <section class="wrap faq-page" style="padding-bottom:clamp(64px,8vw,112px)" data-shopify="main-policy">
+    <nav class="toc" aria-label="Policies"><a href="#shipping">Shipping</a><a href="#returns">Returns</a><a href="#privacy">Privacy Policy</a><a href="#terms">Terms</a></nav>
+    <article class="policy" data-policy-body></article>
+  </section>
+</div>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer on-dark" data-shopify="footer">
+  <div class="wrap">
+    <div class="footer-news">
+      <div>
+        <h2 class="display">Join the Wateen Table</h2>
+        <p>Serving ideas, new batches and the occasional story from our kitchen.</p>
+      </div>
+      <div>
+        <form class="news-form" data-newsletter novalidate>
+          <label class="sr-only" for="nl-email">Email address</label>
+          <input id="nl-email" type="email" placeholder="Enter your email" autocomplete="email" required>
+          <button class="btn" type="submit">Join Us</button>
+        </form>
+        <p class="small" data-news-msg style="color:var(--on-dark);margin-top:10px" aria-live="polite"></p>
+      </div>
+    </div>
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a class="logo" href="#home" aria-label="Tin Zaitoon, home"><span class="logo-ar" lang="ar" dir="rtl"><span>تين</span><i class="bar" aria-hidden="true"></i><span>زيتون</span></span></a>
+        <p>A modern food brand inspired by timeless ingredients.</p>
+      </div>
+      <div class="footer-col"><h3>Shop</h3><ul><li><a href="#product">Shop</a></li><li><a href="#story">Our Story</a></li><li><a href="#ingredients">Ingredients</a></li><li><a href="#faq">FAQs</a></li></ul></div>
+      <div class="footer-col"><h3>Help</h3><ul><li><a href="#contact">Contact</a></li><li><a href="#shipping">Shipping</a></li><li><a href="#returns">Returns</a></li></ul></div>
+      <div class="footer-col"><h3>Legal</h3><ul><li><a href="#privacy">Privacy Policy</a></li><li><a href="#terms">Terms</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Wateen. A Pakistani food brand.</span>
+      <div class="socials">
+        <a href="https://www.instagram.com/" aria-label="Wateen on Instagram"><svg class="ico" aria-hidden="true"><use href="#i-ig"/></svg></a>
+        <a href="https://www.facebook.com/" aria-label="Wateen on Facebook"><svg class="ico" aria-hidden="true"><use href="#i-fb"/></svg></a>
+        <a href="https://www.tiktok.com/" aria-label="Wateen on TikTok"><svg class="ico" aria-hidden="true"><use href="#i-tt"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="co-footer"><div class="wrap"><nav aria-label="Policies"><a href="#shipping">Shipping</a><a href="#returns">Returns</a><a href="#privacy">Privacy Policy</a><a href="#terms">Terms</a></nav></div></div>
+
+<!-- ============ OVERLAYS ============ -->
+<div class="sticky-atc" data-sticky aria-hidden="true">
+  <svg class="sticky-thumb" viewBox="0 0 200 250" aria-hidden="true"><use href="#jar"/></svg>
+  <div><label class="sr-only" for="sticky-variant">Jar size</label><select id="sticky-variant" tabindex="-1"></select></div>
+  <button class="btn btn-primary" type="button" data-sticky-add tabindex="-1">Add to Cart</button>
+</div>
+
+<div class="overlay" data-overlay></div>
+<aside class="drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" aria-hidden="true" data-drawer>
+  <div class="drawer-head"><h2 id="drawer-title">Your Cart</h2><button class="icon-btn" type="button" data-close-cart aria-label="Close cart"><svg class="ico" aria-hidden="true"><use href="#i-close"/></svg></button></div>
+  <div class="shipbar" data-shipbar></div>
+  <ul class="drawer-lines" data-drawer-lines></ul>
+  <div class="drawer-foot" data-drawer-foot></div>
+</aside>
+
+<div class="toast" role="status" aria-live="polite" data-toast></div>
+<a class="wa-float" href="https://wa.me/923364464822?text=Assalam%20o%20Alaikum%2C%20I%20have%20a%20question%20about%20Wateen." target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg><span>Chat with us</span></a>
+<button class="handoff-toggle" type="button" aria-pressed="false" data-handoff><i aria-hidden="true"></i><span>Handoff notes</span></button>
+
+<!-- ============ TEMPLATES ============ -->
+<template id="tpl-enjoy">
+  <ul class="enjoy-grid">
+    <li class="enjoy-card"><div class="art"><svg viewBox="0 0 160 150" aria-hidden="true"><use href="#toast"/></svg></div><h3>Spread</h3><p>Spread 1–2 tablespoons over whole-grain or multigrain toast.</p></li>
+    <li class="enjoy-card"><div class="art"><svg viewBox="0 0 160 120" aria-hidden="true"><use href="#bowl"/></svg></div><h3>Breakfast</h3><p>Pair with toast, oats or a simple breakfast.</p></li>
+    <li class="enjoy-card"><div class="art"><svg viewBox="0 0 160 120" aria-hidden="true"><use href="#snack"/></svg></div><h3>Snack</h3><p>Enjoy with fruit or suitable crackers.</p></li>
+    <li class="enjoy-card"><div class="art"><svg viewBox="0 0 160 120" aria-hidden="true"><use href="#spoon"/></svg></div><h3>Straight From the Jar</h3><p>A spoonful whenever you want a naturally rich bite.</p></li>
+  </ul>
+  <p class="fineprint">Serving suggestions are examples. Adjust portions according to your dietary needs.</p>
+</template>
+
+<template id="tpl-reviews">
+  <div class="review-grid">
+    <article class="review-ph" aria-label="Review placeholder"><div class="who"><span class="avatar"></span><div style="flex:1;display:grid;gap:8px"><span class="sk" style="width:48%"></span><span class="sk" style="width:30%"></span></div></div><span class="sk" style="width:94%"></span><span class="sk" style="width:88%"></span><span class="sk" style="width:62%"></span><p class="label">Awaiting a verified review</p></article>
+    <article class="review-ph" aria-label="Review placeholder"><div class="who"><span class="avatar"></span><div style="flex:1;display:grid;gap:8px"><span class="sk" style="width:40%"></span><span class="sk" style="width:26%"></span></div></div><span class="sk" style="width:90%"></span><span class="sk" style="width:72%"></span><p class="label">Awaiting a verified review</p></article>
+    <article class="review-ph" aria-label="Review placeholder"><div class="who"><span class="avatar"></span><div style="flex:1;display:grid;gap:8px"><span class="sk" style="width:52%"></span><span class="sk" style="width:34%"></span></div></div><span class="sk" style="width:96%"></span><span class="sk" style="width:84%"></span><span class="sk" style="width:44%"></span><p class="label">Awaiting a verified review</p></article>
+  </div>
+  <div class="review-empty">
+    <p>Wateen is new, so there are no reviews yet. We only publish reviews from verified customers. This space fills as the first jars reach breakfast tables.</p>
+    <button class="btn btn-ghost btn-sm" type="button" data-review-cta>Ordered already? Review it</button>
+  </div>
+  <p class="small" data-review-msg hidden style="margin-top:12px">Thank you. Review links are sent after delivery, so you can share your thoughts once your jar has arrived.</p>
+  <aside class="note"><b>Reviews.</b> Connect Judge.me or Shopify Product Reviews. Star ratings and the aggregate score render only when CONFIG.reviews has genuine entries; no seeded or imported reviews.</aside>
+</template>
+
+<template id="tpl-faq">
+  <div class="faq-list">
+    <details><summary>What is Wateen made from?<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="faq-a"><p>Wateen is made from dried figs, dates, walnuts, kalonji and extra virgin olive oil.</p></div></details>
+    <details><summary>Does Wateen contain added sugar?<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="faq-a"><p>No added sugar is used in the base formulation. The natural sweetness comes primarily from the dates and figs.</p></div></details>
+    <details><summary>How should I enjoy Wateen?<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="faq-a"><p>It can be spread on bread or toast, paired with breakfast foods, or enjoyed in other everyday ways.</p></div></details>
+    <details><summary>How should I store Wateen?<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="faq-a"><p>Storage instructions will be published here and printed on every jar once food-safety testing of our final formulation is complete.</p><span class="pending">Pending validation</span></div></details>
+    <details><summary>Does Wateen contain nuts?<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="faq-a"><p>Yes. Wateen contains walnuts.</p></div></details>
+    <details><summary>Is Wateen suitable for everyone?<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="faq-a"><p>Wateen is a food product, not a medical treatment. Anyone with food allergies, dietary restrictions, or specific medical conditions should review the ingredients with an appropriate healthcare professional.</p></div></details>
+    <details><summary>How long does Wateen last?<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="faq-a"><p>We will display the officially validated shelf life once product stability testing has been completed.</p><span class="pending">Pending stability testing</span></div></details>
+  </div>
+</template>
+
+<script>
+(function(){
+  "use strict";
+  /* ---------- Store configuration (mirror Shopify settings) ---------- */
+  const CONFIG = {
+    shippingFee: 250,
+    freeDeliveryVariants: ["500"], // any order containing these ships free
+    freeDeliveryPayments: ["bank"],// paying this way ships free, any variant
+    bankEnabled: true,
+    codEnabled: true,              // only show COD messaging if enabled in Shopify payments
+    cardEnabled: true,
+    whatsapp: "923364464822",      // orders and chat (0336 4464822)
+    orderEmail: "[staff order email]", // set in Shopify › Settings › Notifications (see README); kept out of public source
+    bank: { bankName:"[Bank name]", title:"[Account title]", iban:"[IBAN]" },
+    reviews: [],                   // genuine reviews only; stars render when non-empty
+    claims: {                      // flip to false for any claim not yet verified
+      noColors:true, noFlavors:true, noAddedSugar:true, noPreservatives:true, simpleList:true
+    }
+  };
+  const VARIANTS = [
+    {id:"125", grams:125, name:"Trial Jar",    desc:"Perfect for discovering Wateen.",           price:1450, scale:.84},
+    {id:"250", grams:250, name:"Everyday Jar", desc:"Ideal for regular personal use.",           price:2650, scale:1, badge:"Most Popular"},
+    {id:"500", grams:500, name:"Family Jar",   desc:"Made for households and everyday sharing.", price:4900, scale:1.13, value:"Free delivery · Best value per 100 g"}
+  ];
+  const V = Object.fromEntries(VARIANTS.map(v=>[v.id,v]));
+  const PRODUCT = "Wateen Olive Oil Spread";
+
+  const $ = (s,r=document)=>r.querySelector(s);
+  const $$ = (s,r=document)=>Array.from(r.querySelectorAll(s));
+  const fmt = n => "Rs " + Math.round(n).toLocaleString("en-US");
+  const clampQty = n => Math.max(1, Math.min(20, n|0 || 1));
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const store = {
+    get(k,d){ try{ const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }catch(e){ return d; } },
+    set(k,v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+  };
+
+  const state = {
+    variant:"250", qty:1,
+    cart: (store.get("wateen-cart", []) || []).filter(l => l && V[l.id] && l.qty > 0),
+    page:null, drawer:false, lastOrder:null, gallery:"pack"
+  };
+
+  /* ---------- Templates into slots ---------- */
+  $$("[data-slot]").forEach(slot=>{
+    const t = document.getElementById("tpl-" + slot.dataset.slot);
+    if (t) slot.replaceWith(t.content.cloneNode(true));
+  });
+
+  /* ---------- Static config-driven bits ---------- */
+  function reassureHTML(){
+    const items = [["i-lock","Secure Checkout"]];
+    if (CONFIG.codEnabled) items.push(["i-cash","Cash on Delivery Available"]);
+    items.push(["i-box","Carefully Packed"]);
+    return items.map(([i,t])=>`<li><svg class="ico" aria-hidden="true"><use href="#${i}"/></svg>${t}</li>`).join("");
+  }
+  $$("[data-reassure]").forEach(el=> el.innerHTML = reassureHTML());
+  $$("[data-from-price]").forEach(el=> el.textContent = fmt(Math.min(...VARIANTS.map(v=>v.price))));
+  const FREE_RULE = "Free delivery on the 500 g Family Jar, or on any jar paid by Bank Transfer.";
+
+  const CLAIMS = [
+    ["noColors","No artificial colors"],["noFlavors","No artificial flavors"],["noAddedSugar","No added sugar"],
+    ["noPreservatives","No unnecessary preservatives"],["simpleList","No complicated ingredient list"]
+  ];
+  $$("[data-checklist]").forEach(el=>{
+    el.innerHTML = CLAIMS.filter(([k])=>CONFIG.claims[k]).map(([,t])=>`<li><span class="tick"><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg></span>${t}</li>`).join("");
+  });
+
+  const shipSummary = () => {
+    let s = `Delivery is ${fmt(CONFIG.shippingFee)} per order. ${FREE_RULE}`;
+    if (CONFIG.codEnabled) s += " Cash on Delivery is available.";
+    return s + " Opened jars can't be returned for food-safety reasons; damaged orders are replaced.";
+  };
+  $$("[data-ship-summary]").forEach(el=> el.textContent = shipSummary());
+
+  /* ---------- Buy block ---------- */
+  function buyHTML(p, opts){
+    const H = opts.h1 ? "h1" : "h2";
+    const variants = VARIANTS.map(v=>`
+      <label class="variant" for="${p}-v-${v.id}">
+        <input type="radio" name="${p}-variant" id="${p}-v-${v.id}" value="${v.id}">
+        <span class="v-radio" aria-hidden="true"></span>
+        <span><span class="v-name"><strong>${v.grams} g</strong>${v.name}</span><span class="v-desc">${v.desc}</span>${v.value?`<span class="v-value">${v.value}</span>`:""}</span>
+        <span class="v-price ph">${fmt(v.price)}</span>
+        ${v.badge?`<span class="v-badge">${v.badge}</span>`:""}
+      </label>`).join("");
+    return `
+      <div>
+        <${H} class="buy-title" id="buy-${p}-title">${PRODUCT}</${H}>
+        <p class="buy-sub">Fig<i>•</i>Date<i>•</i>Walnut<i>•</i>Kalonji</p>
+      </div>
+      <div class="buy-price"><span class="price ph" data-price></span><span class="unit" data-unit></span></div>
+      <p class="buy-desc">Naturally rich, nutty and fruity, Wateen brings together five carefully selected ingredients in one delicious everyday spread.</p>
+      <fieldset class="variants"><legend>Choose Your Jar</legend>${variants}</fieldset>
+      <div class="buy-actions">
+        <div class="qty" role="group" aria-label="Quantity">
+          <button type="button" data-qty="-1" aria-label="Decrease quantity">−</button>
+          <input id="${p}-qty" type="number" inputmode="numeric" min="1" max="20" value="1" aria-label="Quantity">
+          <button type="button" data-qty="1" aria-label="Increase quantity">+</button>
+        </div>
+        <button class="btn btn-primary btn-atc" type="button" data-add>Add to Cart <span data-atc-price></span></button>
+      </div>
+      <button class="btn btn-ghost btn-block" type="button" data-buynow>Buy Now</button>
+      <ul class="reassure">${reassureHTML()}</ul>
+      <p class="ship-hint"><span><svg class="ico" aria-hidden="true" style="width:16px;height:16px;margin-right:6px;color:var(--olive-700)"><use href="#i-truck"/></svg>Free delivery on 500 g, or with Bank Transfer</span>${opts.details?`<a class="link-arrow" href="#product" style="font-size:13.5px">Full product details <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>`:""}</p>`;
+  }
+  $$("[data-buy]").forEach(el=>{
+    el.innerHTML = buyHTML(el.dataset.buy, {h1: el.dataset.h1==="true", details: el.dataset.details==="true"});
+  });
+  $("#sticky-variant").innerHTML = VARIANTS.map(v=>`<option value="${v.id}">${v.grams} g · ${fmt(v.price)}</option>`).join("");
+
+  function syncBuy(){
+    const v = V[state.variant];
+    $$("[data-buy]").forEach(el=>{
+      $$(".variant", el).forEach(l=>{
+        const inp = $("input", l); inp.checked = inp.value === state.variant;
+        l.classList.toggle("is-selected", inp.checked);
+      });
+      $("[data-price]", el).textContent = fmt(v.price);
+      $("[data-unit]", el).textContent = fmt(v.price / v.grams * 100) + " per 100 g";
+      $("[data-atc-price]", el).textContent = "· " + fmt(v.price * state.qty);
+      $("input[type=number]", el).value = state.qty;
+    });
+    $$(".jar-scale").forEach(g=> g.style.transform = `scale(${v.scale})`);
+    $$("[data-shown]").forEach(e=> e.textContent = `${v.grams} g · ${v.name}`);
+    $("#sticky-variant").value = state.variant;
+  }
+
+  /* ---------- Gallery (PDP) ---------- */
+  const lineup = () => {
+    const jars = [{x:20,w:140,g:"125 g"},{x:170,w:180,g:"250 g"},{x:360,w:220,g:"500 g"}];
+    return `<rect width="600" height="630" fill="#E4D8C0"/><g fill="#F7F2E7" opacity=".4"><polygon points="360,0 440,0 200,630 120,630"/></g><rect x="0" y="468" width="600" height="162" fill="#D6C6A6"/>` +
+      jars.map(j=>{ const h=j.w*1.25; return `<use href="#jar" x="${j.x}" y="${478-h}" width="${j.w}" height="${h}"/><text x="${j.x+j.w/2}" y="520" text-anchor="middle" font-family="Figtree,sans-serif" font-weight="600" font-size="17" fill="#46532F">${j.g}</text>`; }).join("");
+  };
+  const VIEWS = {
+    pack:  {label:"Jar", vb:"0 0 500 525", body:`<use href="#pack-back" width="500" height="560"/><g class="jar-scale" style="transform-box:fill-box;transform-origin:50% 100%;transition:transform .5s"><use href="#jar" x="140" y="180" width="220" height="275"/></g><use href="#pack-front" width="500" height="560"/>`},
+    flat:  {label:"Ingredients", vb:"0 0 600 630", body:`<rect width="600" height="630" fill="#E4D8C0"/><use href="#scene-flatlay" y="15" width="600" height="600"/>`},
+    toast: {label:"On toast", vb:"0 0 400 420", body:`<rect width="400" height="420" fill="#E4D8C0"/><g fill="#F7F2E7" opacity=".4"><polygon points="250,0 310,0 120,420 60,420"/></g><circle cx="200" cy="230" r="170" fill="#EFE7D6" stroke="#CDBB9A"/><use href="#toast" x="80" y="110" width="240" height="225"/><use href="#fig-half" x="292" y="92" width="64" height="70" transform="rotate(20 324 127)"/><use href="#kalonji" x="60" y="330" width="60" height="40"/>`},
+    sizes: {label:"Sizes", vb:"0 0 600 630", body: lineup()}
+  };
+  function renderGallery(){
+    const main = $("[data-gallery-main]"); if (!main) return;
+    const v = VIEWS[state.gallery];
+    main.innerHTML = `<svg viewBox="${v.vb}" preserveAspectRatio="xMidYMid slice" role="img" aria-label="${PRODUCT}: ${v.label}">${v.body}</svg>`;
+    $("[data-thumbs]").innerHTML = Object.entries(VIEWS).map(([k,vw])=>`<button class="thumb" type="button" data-thumb="${k}" aria-pressed="${k===state.gallery}" aria-label="Show ${vw.label.toLowerCase()} image"><svg viewBox="${vw.vb}" preserveAspectRatio="xMidYMid slice" aria-hidden="true">${vw.body.replace(/class="jar-scale"[^>]*>/,'>')}</svg></button>`).join("");
+    syncBuy();
+  }
+
+  /* ---------- Cart ---------- */
+  const subtotal = () => state.cart.reduce((s,l)=> s + V[l.id].price * l.qty, 0);
+  const hasFreeVariant = () => state.cart.some(l => CONFIG.freeDeliveryVariants.includes(l.id));
+  // pay: "bank" | "cod" | "card" | undefined (not chosen yet)
+  const shipping = (sub, pay) => (sub === 0 || hasFreeVariant() || (pay && CONFIG.freeDeliveryPayments.includes(pay))) ? 0 : CONFIG.shippingFee;
+  const currentPay = () => { const r = $("#checkout-form input[name=pay]:checked"); return r ? r.value : undefined; };
+  const count = () => state.cart.reduce((s,l)=> s + l.qty, 0);
+  const save = () => store.set("wateen-cart", state.cart);
+
+  function addToCart(id, qty){
+    const line = state.cart.find(l=>l.id===id);
+    if (line) line.qty = Math.min(20, line.qty + qty); else state.cart.push({id, qty});
+    save(); renderCart();
+  }
+  function setLineQty(id, qty){
+    const line = state.cart.find(l=>l.id===id); if (!line) return;
+    line.qty = Math.max(0, Math.min(20, qty));
+    if (!line.qty) state.cart = state.cart.filter(l=>l.id!==id);
+    save(); renderCart();
+  }
+
+  function shipBarHTML(){
+    if (hasFreeVariant()) return `<p><strong>Free delivery unlocked</strong> with the 500 g Family Jar.</p>`;
+    return `<p><strong>Get free delivery:</strong> add a 500 g Family Jar, or pay by Bank Transfer at checkout.</p>`;
+  }
+  function linesHTML(){
+    return state.cart.map(l=>{ const v = V[l.id]; return `
+      <li class="line">
+        <svg class="line-thumb" viewBox="0 0 200 250" aria-hidden="true"><use href="#jar"/></svg>
+        <div>
+          <p class="line-name">${PRODUCT}</p>
+          <p class="line-var">${v.grams} g · ${v.name}</p>
+          <div class="line-row">
+            <div class="qty qty-sm" role="group" aria-label="Quantity for ${v.grams} g jar">
+              <button type="button" data-line-qty="-1" data-id="${v.id}" aria-label="Decrease">−</button><span>${l.qty}</span><button type="button" data-line-qty="1" data-id="${v.id}" aria-label="Increase">+</button>
+            </div>
+            <button class="line-remove" type="button" data-remove="${v.id}">Remove</button>
+          </div>
+        </div>
+        <p class="line-price ph">${fmt(v.price * l.qty)}</p>
+      </li>`; }).join("");
+  }
+  const emptyHTML = cta => `<div class="empty"><svg viewBox="0 0 200 250" aria-hidden="true" style="opacity:.55"><use href="#jar"/></svg><p>Your cart is empty.</p><a class="btn btn-primary" href="#shop" ${cta||""}>Shop Wateen</a></div>`;
+  function upsellHTML(){
+    // Inline nudge toward the free-delivery jar, never a popup
+    if (!state.cart.length || hasFreeVariant()) return "";
+    const pick = V[CONFIG.freeDeliveryVariants[0]];
+    return `<div class="upsell"><svg viewBox="0 0 200 250" aria-hidden="true"><use href="#jar"/></svg><span>Add a <strong>${pick.grams} g ${pick.name}</strong> for ${fmt(pick.price)} and your whole order ships free.</span><button class="btn btn-ghost btn-sm" type="button" data-upsell="${pick.id}">Add</button></div>`;
+  }
+
+  function renderCart(){
+    const n = count(), sub = subtotal();
+    $$("[data-count]").forEach(el=>{ el.textContent = n; el.dataset.n = n; });
+    $(".cart-btn").setAttribute("aria-label", `Open cart, ${n} item${n===1?"":"s"}`);
+    $("#drawer-title").textContent = n ? `Your Cart (${n})` : "Your Cart";
+    // drawer
+    $("[data-shipbar]").innerHTML = shipBarHTML();
+    $("[data-shipbar]").hidden = !state.cart.length;
+    $("[data-drawer-lines]").innerHTML = state.cart.length ? linesHTML() + `<li style="list-style:none">${upsellHTML()}</li>` : `<li style="list-style:none">${emptyHTML('data-close-cart')}</li>`;
+    $("[data-drawer-foot]").innerHTML = state.cart.length ? `
+      <div class="sum-row"><span>Subtotal</span><strong class="ph">${fmt(sub)}</strong></div>
+      <p class="small">${hasFreeVariant() ? "Delivery is free on this order." : `Delivery ${fmt(CONFIG.shippingFee)}, or free with Bank Transfer.`}</p>
+      <a class="btn btn-primary btn-block" href="#checkout">Checkout · ${fmt(sub)}</a>
+      <ul class="reassure" style="justify-content:center">${reassureHTML()}</ul>
+      <a class="small" href="#cart" style="text-align:center">View full cart</a>` : "";
+    // cart page
+    const cp = $("[data-cart-page]");
+    if (cp){
+      cp.innerHTML = state.cart.length ? `
+        <div class="cart-grid">
+          <ul class="cart-lines">${linesHTML()}</ul>
+          <aside class="summary" aria-labelledby="sum-title">
+            <h2 id="sum-title">Order summary</h2>
+            <div class="shipbar">${shipBarHTML()}</div>
+            <div class="sum-row"><span>Subtotal</span><span class="ph">${fmt(sub)}</span></div>
+            <div class="sum-row"><span>Delivery</span><span class="ph">${shipping(sub) ? `${fmt(shipping(sub))} <span class="small">(free with Bank Transfer)</span>` : "Free"}</span></div>
+            <div class="sum-row total"><span>Total</span><span class="ph">${fmt(sub + shipping(sub))}</span></div>
+            <a class="btn btn-primary btn-block" href="#checkout">Proceed to Checkout</a>
+            <ul class="reassure">${reassureHTML()}</ul>
+            ${upsellHTML()}
+          </aside>
+        </div>` : emptyHTML();
+    }
+    renderCheckout();
+  }
+
+  /* ---------- Drawer ---------- */
+  let lastFocus = null;
+  function openDrawer(){
+    const d = $("[data-drawer]");
+    lastFocus = document.activeElement;
+    d.classList.add("open"); d.setAttribute("aria-hidden","false");
+    $("[data-overlay]").classList.add("show");
+    document.body.classList.add("locked");
+    state.drawer = true; updateSticky();
+    setTimeout(()=> $("[data-close-cart]", d).focus(), 50);
+  }
+  function closeDrawer(){
+    if (!state.drawer) return;
+    const d = $("[data-drawer]");
+    d.classList.remove("open"); d.setAttribute("aria-hidden","true");
+    $("[data-overlay]").classList.remove("show");
+    document.body.classList.remove("locked");
+    state.drawer = false; updateSticky();
+    if (lastFocus && document.contains(lastFocus)) lastFocus.focus();
+  }
+
+  /* ---------- Checkout ---------- */
+  const CITIES = ["Karachi","Lahore","Islamabad","Rawalpindi","Faisalabad","Multan","Peshawar","Quetta","Hyderabad","Sialkot","Gujranwala","Other"];
+  const PROVINCES = ["Punjab","Sindh","Khyber Pakhtunkhwa","Balochistan","Islamabad Capital Territory","Gilgit-Baltistan","Azad Jammu & Kashmir"];
+  function renderCheckout(){
+    const root = $("[data-checkout]"); if (!root) return;
+    if (!state.cart.length){ root.innerHTML = emptyHTML(); return; }
+    if ($("#checkout-form")){ updatePay(); return; } // keep what the person typed
+    const payDefault = CONFIG.bankEnabled ? "bank" : CONFIG.codEnabled ? "cod" : "card";
+    const sub = subtotal(), ship = shipping(sub, payDefault), total = sub + ship;
+    const freeTag = hasFreeVariant() ? "" : `<span class="tag-free">Free delivery</span>`;
+    root.innerHTML = `
+      <div class="co-grid">
+        <form class="co-form" id="checkout-form" novalidate>
+          <fieldset><legend>Contact</legend><div class="fields">
+            <div class="field"><label for="co-phone">Mobile number</label><input id="co-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="03XX XXXXXXX" pattern="^(\\+92|0)3[0-9]{2}\\s?[0-9]{7}$" required><span class="hint">Our courier calls this number to confirm delivery.</span></div>
+            <div class="field"><label for="co-email">Email</label><input id="co-email" name="email" type="email" autocomplete="email" required></div>
+            <label class="check" for="co-news"><input id="co-news" type="checkbox" checked> Email me serving ideas and new batches</label>
+          </div></fieldset>
+          <fieldset><legend>Delivery</legend><div class="fields">
+            <div class="field"><label for="co-name">Full name</label><input id="co-name" name="name" autocomplete="name" required></div>
+            <div class="field"><label for="co-address">Address</label><input id="co-address" name="address" autocomplete="address-line1" placeholder="House, street, area" required></div>
+            <div class="field"><label for="co-apt">Apartment, floor or landmark <span style="font-weight:400;color:var(--muted)">(optional)</span></label><input id="co-apt" name="apt" autocomplete="address-line2"></div>
+            <div class="field-row">
+              <div class="field"><label for="co-city">City</label><select id="co-city" name="city" autocomplete="address-level2" required><option value="">Select city</option>${CITIES.map(c=>`<option>${c}</option>`).join("")}</select></div>
+              <div class="field"><label for="co-province">Province</label><select id="co-province" name="province" autocomplete="address-level1" required><option value="">Select province</option>${PROVINCES.map(c=>`<option>${c}</option>`).join("")}</select></div>
+            </div>
+            <div class="field"><label for="co-postal">Postal code <span style="font-weight:400;color:var(--muted)">(optional)</span></label><input id="co-postal" name="postal" inputmode="numeric" autocomplete="postal-code"></div>
+          </div></fieldset>
+          <fieldset><legend>Delivery method</legend>
+            <label class="choice is-selected" for="ship-std"><input id="ship-std" type="radio" name="ship" checked><span><strong>Standard delivery</strong><span class="ph">2 to 5 working days</span></span><b class="ph" data-ship-price>${ship ? fmt(ship) : "Free"}</b></label>
+          </fieldset>
+          <fieldset><legend>Payment</legend>
+            ${CONFIG.bankEnabled?`<label class="choice" for="pay-bank"><input id="pay-bank" type="radio" name="pay" value="bank" ${payDefault==="bank"?"checked":""}><span><strong>Bank Transfer${freeTag}</strong><span>Transfer to our account; we dispatch once payment is received.</span></span><svg class="ico" aria-hidden="true"><use href="#i-box"/></svg></label>`:""}
+            ${CONFIG.codEnabled?`<label class="choice" for="pay-cod"><input id="pay-cod" type="radio" name="pay" value="cod" ${payDefault==="cod"?"checked":""}><span><strong>Cash on Delivery</strong><span>Pay the courier when your order arrives.</span></span><svg class="ico" aria-hidden="true"><use href="#i-cash"/></svg></label>`:""}
+            ${CONFIG.cardEnabled?`<label class="choice" for="pay-card"><input id="pay-card" type="radio" name="pay" value="card" ${payDefault==="card"?"checked":""}><span><strong>Debit or credit card</strong><span>Visa, Mastercard. Entered on the secure payment step.</span></span><svg class="ico" aria-hidden="true"><use href="#i-lock"/></svg></label>`:""}
+            <p class="pay-note" data-pay-note></p>
+          </fieldset>
+          <button class="btn btn-primary btn-block" type="submit" data-place></button>
+          <p class="small" style="margin-top:14px;text-align:center">By placing your order you agree to our <a href="#terms">Terms</a> and <a href="#privacy">Privacy Policy</a>.</p>
+        </form>
+        <details class="co-sum summary" open>
+          <summary><span>Order summary</span><span class="ph" data-co-total-head>${fmt(total)}</span></summary>
+          <div data-co-summary>${coSummary(sub, ship, total)}</div>
+        </details>
+      </div>`;
+    if (matchMedia("(max-width:860px)").matches) $(".co-sum").open = false;
+    updatePay();
+  }
+  function coSummary(sub, ship, total){
+    const head = $("[data-co-total-head]"); if (head) head.textContent = fmt(total);
+    const lines = state.cart.map(l=>{ const v = V[l.id]; return `<li class="line"><svg class="line-thumb" viewBox="0 0 200 250" aria-hidden="true"><use href="#jar"/></svg><div><p class="line-name">${PRODUCT}</p><p class="line-var">${v.grams} g · ${v.name} · Qty ${l.qty}</p></div><p class="line-price ph">${fmt(v.price*l.qty)}</p></li>`; }).join("");
+    return `<ul style="list-style:none;padding:0;margin:0">${lines}</ul><a class="small" href="#cart">Edit cart</a>
+      <div class="discount" style="margin-top:16px"><label class="sr-only" for="co-discount">Discount code</label><input id="co-discount" placeholder="Discount code"><button class="btn btn-ghost btn-sm" type="button" data-discount>Apply</button></div>
+      <p class="small" data-discount-msg aria-live="polite" style="margin-top:8px"></p>
+      <div style="display:grid;gap:10px;margin-top:14px">
+        <div class="sum-row"><span>Subtotal</span><span class="ph">${fmt(sub)}</span></div>
+        <div class="sum-row"><span>Delivery</span><span class="ph">${ship ? fmt(ship) : "Free"}</span></div>
+        <div class="sum-row total"><span>Total</span><span class="ph">${fmt(total)}</span></div>
+        <p class="small">Prices in PKR.</p>
+      </div>`;
+  }
+  function updatePay(){
+    const form = $("#checkout-form"); if (!form) return;
+    const pay = currentPay();
+    $$(".choice", form).forEach(c=> c.classList.toggle("is-selected", $("input", c).checked));
+    const sub = subtotal(), ship = shipping(sub, pay), total = sub + ship;
+    $("[data-co-summary]").innerHTML = coSummary(sub, ship, total);
+    $("[data-ship-price]").textContent = ship ? fmt(ship) : "Free";
+    $("[data-place]").textContent = pay === "card" ? `Continue to Payment · ${fmt(total)}` : `Place Order · ${fmt(total)}`;
+    $("[data-pay-note]").textContent = {
+      bank: "Delivery is free with Bank Transfer. Our account details appear after you place the order; send the payment screenshot on WhatsApp and we dispatch once it's received.",
+      cod: `Please keep the exact amount ready. We confirm Cash on Delivery orders by phone before dispatch.${hasFreeVariant() ? "" : " Switch to Bank Transfer to save " + fmt(CONFIG.shippingFee) + " on delivery."}`,
+      card: "You'll enter your card details on the secure payment page. We never see or store your full card number."
+    }[pay] || "";
+  }
+
+  /* ---------- Order hand-off: WhatsApp (customer sends) + email (Shopify) ---------- */
+  const PAY_LABEL = {bank:"Bank Transfer", cod:"Cash on Delivery", card:"Card"};
+  function orderMessage(o){
+    return [
+      `Assalam o Alaikum! New Wateen order ${o.no}`,
+      "",
+      ...o.lines.map(l=> `• ${l.qty} × ${l.grams} g ${l.name}: ${fmt(l.total)}`),
+      `Subtotal: ${fmt(o.sub)}`,
+      `Delivery: ${o.ship ? fmt(o.ship) : "Free"}`,
+      `Total: ${fmt(o.total)}`,
+      `Payment: ${PAY_LABEL[o.pay]}`,
+      "",
+      `Name: ${o.name}`,
+      `Phone: ${o.phone}`,
+      `Email: ${o.email}`,
+      `Address: ${o.address}${o.apt ? ", " + o.apt : ""}`,
+      `City: ${o.city}, ${o.province}${o.postal ? " " + o.postal : ""}`
+    ].join("\n");
+  }
+  const waLink = text => `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(text)}`;
+
+  function renderConfirmed(){
+    const root = $("[data-confirmed]"), o = state.lastOrder;
+    if (!o){ root.innerHTML = `<div class="stack"><h1 class="display h2">No recent order</h1><p class="lead">Once you place an order, its confirmation appears here.</p><div><a class="btn btn-primary" href="#shop">Shop Wateen</a></div></div>`; return; }
+    root.innerHTML = `
+      <div class="stack">
+        <span class="confirm-mark"><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg></span>
+        <p class="eyebrow">Order ${o.no}</p>
+        <h1 class="display h2">Thank you, ${o.name.split(" ")[0] || "friend"}.</h1>
+        <p class="lead">One last step: send your order to us on WhatsApp so we can confirm it.</p>
+        <div><a class="btn btn-wa" href="${waLink(orderMessage(o))}" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg>Send order on WhatsApp</a></div>
+        <p class="small">Opens WhatsApp with your order details filled in. Just tap send. Our number is 0336 4464822.</p>
+        ${o.pay==="bank"?`<div class="bank-box" aria-label="Bank details">
+          <strong>Transfer ${fmt(o.total)} to</strong>
+          <div><span>Bank</span><b class="ph">${CONFIG.bank.bankName}</b></div>
+          <div><span>Account title</span><b class="ph">${CONFIG.bank.title}</b></div>
+          <div><span>IBAN</span><b class="ph">${CONFIG.bank.iban}</b></div>
+          <div><span>Reference</span><b>${o.no}</b></div>
+        </div>`:""}
+        <ul class="steps-list">
+          <li><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg><span><strong>Confirm on WhatsApp</strong>${o.pay==="bank"?"Send your order, then the payment screenshot, in the same chat.":o.pay==="cod"?`We'll also call ${o.phone} before dispatch.`:"We'll confirm your order in the same chat."}</span></li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-box"/></svg><span><strong>Carefully packed</strong>Your jars are packed to travel safely${o.pay==="bank"?", and dispatched once your transfer is received":""}.</span></li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-truck"/></svg><span><strong>Delivered to ${o.city}</strong>Usually within <span class="ph">2 to 5 working days</span>. ${o.ship?"":"Delivery is free on this order."}</span></li>
+        </ul>
+        <div class="sum-row total"><span>${o.items} item${o.items===1?"":"s"} · ${PAY_LABEL[o.pay]}</span><span class="ph">${fmt(o.total)}</span></div>
+        <div class="hero-ctas"><a class="btn btn-ghost" href="#home">Back to Wateen</a><a class="link-arrow" href="#enjoy">Serving ideas <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+        <aside class="note"><b>Order hand-off.</b> WhatsApp: the button opens a chat with ${CONFIG.whatsapp} and the full order prefilled; the customer taps send. Email: a static page can't send mail, so at launch set Shopify › Settings › Notifications › Staff order notifications to ${CONFIG.orderEmail}; every order then arrives by email automatically. For automatic WhatsApp alerts without the customer tapping send, add a Shopify WhatsApp notification app. Bank details are placeholders.</aside>
+      </div>`;
+  }
+
+  /* ---------- Policies ---------- */
+  const ph = t => `<span class="ph">${t}</span>`;
+  const POLICIES = {
+    shipping:{title:"Shipping", sections:[
+      ["Where we deliver", `We deliver across Pakistan through ${ph("our courier partners")}.`],
+      ["Dispatch and delivery times", `Orders are dispatched within ${ph("1 to 2 working days")} and usually arrive within ${ph("2 to 5 working days")}, depending on your city.`],
+      ["Delivery charges", `Delivery is ${ph(fmt(CONFIG.shippingFee))} per order. It's free on any order that includes a 500 g Family Jar, and on any order paid by Bank Transfer.`],
+      ["Bank Transfer", "After you place your order, our account details appear on the confirmation page. Send us the payment screenshot on WhatsApp (0336 4464822) and we dispatch once it's received."],
+      ...(CONFIG.codEnabled ? [["Cash on Delivery", "Cash on Delivery is available. Please keep the exact amount ready. We confirm Cash on Delivery orders by phone before dispatch."]] : []),
+      ["Packaging", "Every jar is packed to travel safely. If anything arrives damaged, see our Returns policy."],
+      ["Tracking", "Once your order ships, you'll receive tracking details by SMS or email."]
+    ]},
+    returns:{title:"Returns", sections:[
+      ["Food safety first", "Because Wateen is a food product, we can't accept returns of opened jars."],
+      ["Damaged or incorrect orders", `If your jar arrives damaged or you receive the wrong item, contact us within ${ph("48 hours")} of delivery with a photo of the jar and packaging. We'll replace it or refund you.`],
+      ["Refunds", `Approved refunds are issued to your original payment method within ${ph("7 working days")}.${CONFIG.codEnabled ? " For Cash on Delivery orders, we refund by bank transfer." : ""}`],
+      ["Cancellations", "You can cancel an order any time before it is dispatched by contacting us."]
+    ]},
+    privacy:{title:"Privacy Policy", sections:[
+      ["What we collect", "When you order or sign up, we collect your name, contact details and delivery address, plus basic information about how you use this site."],
+      ["How we use it", "To process and deliver your order, provide customer support and, if you opt in, send you Wateen news."],
+      ["Payments", "Card payments are processed by our payment provider. We never see or store your full card details."],
+      ["Sharing", "We share delivery details with our courier partners only to deliver your order. We never sell your data."],
+      ["Your choices", "You can unsubscribe from emails at any time and ask us to access, correct or delete your data through the Contact page."]
+    ]},
+    terms:{title:"Terms", sections:[
+      ["About these terms", "These terms apply when you use this site or place an order with Wateen."],
+      ["Product information", "Wateen is a food product, not a medical treatment. Always check the ingredient list before eating. Wateen contains walnuts."],
+      ["Prices and payment", "All prices are shown in Pakistani Rupees (PKR). We may update prices; the price at checkout is the price you pay."],
+      ["Orders", "We may decline or cancel an order if a product is unavailable or details can't be verified. If we do, you'll be refunded in full."],
+      ["Governing law", `These terms are governed by the laws of ${ph("Pakistan")}.`]
+    ]}
+  };
+  function renderPolicy(key){
+    const p = POLICIES[key];
+    $("[data-policy-title]").textContent = p.title;
+    $("[data-policy-crumb]").textContent = p.title;
+    $("[data-policy-updated]").innerHTML = `Last updated ${ph("on launch")}`;
+    $("[data-policy-body]").innerHTML = p.sections.map(([h,t])=>`<h2>${h}</h2><p>${t}</p>`).join("");
+    $$(".page[data-page=policy] .toc a").forEach(a=> a.toggleAttribute("aria-current", a.getAttribute("href")==="#"+key));
+  }
+  // Orders FAQ on the FAQ page
+  $("[data-faq-orders]").innerHTML = [
+    ["Where do you deliver?", `We deliver across Pakistan. Orders usually arrive within ${ph("2 to 5 working days")}.`],
+    ["How much is delivery?", `Delivery is ${ph(fmt(CONFIG.shippingFee))}. ${FREE_RULE}`],
+    ["How do I confirm my order?", "After checkout, tap “Send order on WhatsApp”. Your order details are filled in for you; just send the message to 0336 4464822 and we'll confirm."],
+    ...(CONFIG.codEnabled ? [["Can I pay Cash on Delivery?", "Yes. Choose Cash on Delivery at checkout and we'll call to confirm before dispatch."]] : []),
+    ["Which jar size should I choose?", "Start with the 125 g Trial Jar to discover Wateen. The 250 g Everyday Jar suits regular personal use, and the 500 g Family Jar is made for sharing, offers the best value per 100 g and ships free."]
+  ].map(([q,a])=>`<details><summary>${q}<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="faq-a"><p>${a}</p></div></details>`).join("");
+
+  /* ---------- Router ---------- */
+  const PAGES = ["home","product","cart","checkout","confirmed","story","faq","contact"];
+  const POLICY_KEYS = Object.keys(POLICIES);
+  function route(){
+    const h = decodeURIComponent(location.hash.slice(1));
+    let page = "home", anchor = null;
+    if (!h || h === "top") page = "home";
+    else if (PAGES.includes(h)) page = h;
+    else if (POLICY_KEYS.includes(h)){ page = "policy"; renderPolicy(h); }
+    else {
+      const el = document.getElementById(h);
+      const pg = el && el.closest(".page");
+      if (pg){ page = pg.dataset.page; anchor = el; }
+      else if (el){ page = state.page || "home"; anchor = el; }
+    }
+    const first = state.page === null;
+    const changed = page !== state.page;
+    $$(".page").forEach(p=> p.hidden = p.dataset.page !== page);
+    state.page = page;
+    document.body.classList.toggle("mode-checkout", page === "checkout" || page === "confirmed");
+    closeDrawer(); closeMenu();
+    if (page === "checkout") renderCheckout();
+    if (page === "confirmed") renderConfirmed();
+    if (page === "product") renderGallery();
+    $$(".site-nav a").forEach(a=> a.toggleAttribute("aria-current", a.getAttribute("href") === "#"+page));
+    if (anchor){
+      requestAnimationFrame(()=> anchor.scrollIntoView({behavior: (reduce || changed) ? "auto" : "smooth", block:"start"}));
+    } else if (changed){
+      window.scrollTo({top:0, behavior:"auto"});
+    }
+    if (changed && !anchor && !first){ const t = $(`.page[data-page="${page}"] h1`); if (t){ t.setAttribute("tabindex","-1"); t.focus({preventScroll:true}); } }
+    updateSticky(); onScroll();
+  }
+
+  /* ---------- Menu ---------- */
+  const menuBtn = $(".menu-btn"), mnav = $("#mobile-nav");
+  function closeMenu(){ mnav.hidden = true; menuBtn.setAttribute("aria-expanded","false"); menuBtn.innerHTML = `<svg class="ico" aria-hidden="true"><use href="#i-menu"/></svg>`; menuBtn.setAttribute("aria-label","Open menu"); }
+  menuBtn.addEventListener("click", ()=>{
+    const open = mnav.hidden;
+    mnav.hidden = !open; menuBtn.setAttribute("aria-expanded", String(open));
+    menuBtn.innerHTML = `<svg class="ico" aria-hidden="true"><use href="#${open?"i-close":"i-menu"}"/></svg>`;
+    menuBtn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    $(".site-header").classList.add("scrolled");
+  });
+
+  /* ---------- Sticky header + sticky ATC ---------- */
+  const header = $(".site-header"), sticky = $("[data-sticky]");
+  const visibleAdds = new Set();
+  const io = "IntersectionObserver" in window ? new IntersectionObserver(entries=>{
+    entries.forEach(e=> e.isIntersecting ? visibleAdds.add(e.target) : visibleAdds.delete(e.target));
+    updateSticky();
+  }, {threshold:0}) : null;
+  if (io) $$("[data-add], .hero .btn-primary").forEach(b=> io.observe(b));
+  function updateSticky(){
+    const onPage = state.page === "home" || state.page === "product";
+    const anyVisible = Array.from(visibleAdds).some(b=> !b.closest(".page").hidden);
+    const show = onPage && !anyVisible && window.scrollY > 480 && !state.drawer;
+    sticky.classList.toggle("show", show);
+    sticky.setAttribute("aria-hidden", String(!show));
+    $$("select,button", sticky).forEach(el=> el.tabIndex = show ? 0 : -1);
+  }
+  function onScroll(){
+    header.classList.toggle("scrolled", window.scrollY > 8 || !mnav.hidden);
+    updateSticky();
+  }
+  window.addEventListener("scroll", onScroll, {passive:true});
+
+  /* ---------- Events ---------- */
+  document.addEventListener("change", e=>{
+    const t = e.target;
+    if (t.matches(".variant input")){ state.variant = t.value; syncBuy(); }
+    else if (t.id === "sticky-variant"){ state.variant = t.value; syncBuy(); }
+    else if (t.matches("[data-buy] input[type=number]")){ state.qty = clampQty(parseInt(t.value,10)); syncBuy(); }
+    else if (t.name === "pay"){ updatePay(); }
+  });
+  document.addEventListener("click", e=>{
+    const t = e.target.closest("button, a");
+    if (!t) return;
+    if (t.matches("a[href^='#']")){
+      const href = t.getAttribute("href");
+      if (href === location.hash || (href === "#home" && !location.hash)){ e.preventDefault(); route(); if (href === "#home") window.scrollTo({top:0,behavior:reduce?"auto":"smooth"}); }
+      return;
+    }
+    if (t.dataset.qty){ state.qty = clampQty(state.qty + Number(t.dataset.qty)); syncBuy(); return; }
+    if (t.hasAttribute("data-add")){ addToCart(state.variant, state.qty); openDrawer(); return; }
+    if (t.hasAttribute("data-sticky-add")){ addToCart(state.variant, 1); openDrawer(); return; }
+    if (t.hasAttribute("data-buynow")){ addToCart(state.variant, state.qty); location.hash = "checkout"; return; }
+    if (t.dataset.lineQty){ const l = state.cart.find(x=>x.id===t.dataset.id); if (l) setLineQty(l.id, l.qty + Number(t.dataset.lineQty)); return; }
+    if (t.dataset.remove){ setLineQty(t.dataset.remove, 0); toast("Removed from cart"); return; }
+    if (t.dataset.upsell){ addToCart(t.dataset.upsell, 1); toast("Added to cart"); return; }
+    if (t.hasAttribute("data-open-cart")){ openDrawer(); return; }
+    if (t.hasAttribute("data-close-cart")){ closeDrawer(); return; }
+    if (t.dataset.thumb){ state.gallery = t.dataset.thumb; renderGallery(); return; }
+    if (t.hasAttribute("data-review-cta")){ const m = t.closest(".review-empty").nextElementSibling; if (m) m.hidden = false; return; }
+    if (t.hasAttribute("data-discount")){ const m = $("[data-discount-msg]"); const v = $("#co-discount").value.trim(); m.textContent = v ? `"${v}" isn't a valid code.` : "Enter a code to apply it."; return; }
+    if (t.dataset.copy){
+      const text = t.dataset.copy;
+      const done = ()=>{ t.textContent = "Copied"; setTimeout(()=> t.textContent = "Copy", 1600); };
+      try{ navigator.clipboard.writeText(text).then(done, ()=> selectText(t.previousElementSibling)); }catch(err){ selectText(t.previousElementSibling); }
+      return;
+    }
+    if (t.hasAttribute("data-handoff")){ setHandoff(!document.body.classList.contains("handoff")); return; }
+  });
+  $("[data-overlay]").addEventListener("click", closeDrawer);
+  document.addEventListener("keydown", e=>{
+    if (e.key === "Escape"){ closeDrawer(); if (!mnav.hidden){ closeMenu(); menuBtn.focus(); } }
+    if (e.key === "Tab" && state.drawer){
+      const f = $$("a[href],button:not([disabled]),input,select", $("[data-drawer]")).filter(el=> el.offsetParent !== null);
+      if (!f.length) return;
+      if (e.shiftKey && document.activeElement === f[0]){ e.preventDefault(); f[f.length-1].focus(); }
+      else if (!e.shiftKey && document.activeElement === f[f.length-1]){ e.preventDefault(); f[0].focus(); }
+    }
+  });
+  function selectText(el){ if (!el) return; const r = document.createRange(); r.selectNodeContents(el); const s = getSelection(); s.removeAllRanges(); s.addRange(r); }
+
+  document.addEventListener("submit", e=>{
+    const f = e.target;
+    e.preventDefault();
+    if (f.matches("[data-newsletter]")){
+      const inp = $("input", f), msg = $("[data-news-msg]");
+      if (!inp.checkValidity()){ msg.textContent = "Enter a valid email address, like name@example.com."; inp.focus(); return; }
+      f.outerHTML = `<p class="news-done">Welcome to the Wateen table.</p>`;
+      msg.textContent = "You're on the list. Look out for our first note soon.";
+      return;
+    }
+    if (f.matches("[data-contact]")){
+      const msg = $("[data-contact-msg]");
+      if (!f.checkValidity()){ f.reportValidity(); return; }
+      msg.hidden = false;
+      msg.textContent = "Thanks. This prototype doesn't send messages yet; the form connects to Shopify's contact form at launch.";
+      return;
+    }
+    if (f.id === "checkout-form"){
+      if (!f.checkValidity()){ f.reportValidity(); return; }
+      const sub = subtotal(), pay = currentPay() || "cod", ship = shipping(sub, pay);
+      const val = id => $("#" + id).value.trim();
+      state.lastOrder = {
+        no: "WTN-" + (1000 + Math.floor(Math.random()*9000)),
+        name: val("co-name"), phone: val("co-phone"), email: val("co-email"),
+        address: val("co-address"), apt: val("co-apt"), city: val("co-city"), province: val("co-province"), postal: val("co-postal"),
+        pay, sub, ship, total: sub + ship, items: count(),
+        lines: state.cart.map(l=>({qty:l.qty, grams:V[l.id].grams, name:V[l.id].name, total:V[l.id].price*l.qty}))
+      };
+      state.cart = []; save();
+      $("[data-checkout]").innerHTML = "";
+      renderCart();
+      location.hash = "confirmed";
+    }
+  });
+
+  let toastT;
+  function toast(msg){ const t = $("[data-toast]"); t.textContent = msg; t.classList.add("show"); clearTimeout(toastT); toastT = setTimeout(()=> t.classList.remove("show"), 1800); }
+
+  function setHandoff(on){
+    document.body.classList.toggle("handoff", on);
+    const b = $("[data-handoff]"); b.setAttribute("aria-pressed", String(on));
+    $("span", b).textContent = on ? "Handoff notes: on" : "Handoff notes";
+    store.set("wateen-handoff", on);
+  }
+
+  /* ---------- Texture scatter (deterministic) ---------- */
+  function rng(seed){ return ()=>{ seed |= 0; seed = seed + 0x6D2B79F5 | 0; let t = Math.imul(seed ^ seed>>>15, 1|seed); t = t + Math.imul(t ^ t>>>7, 61|t) ^ t; return ((t ^ t>>>14) >>> 0) / 4294967296; }; }
+  const NS = "http://www.w3.org/2000/svg";
+  function scatter(g, n, box, seed, make){ const r = rng(seed); for (let i=0;i<n;i++){ g.appendChild(make(box[0] + r()*(box[2]-box[0]), box[1] + r()*(box[3]-box[1]), r)); } }
+  const el = (tag, attrs) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); return e; };
+  scatter($("#grains"), 60, [214,70,590,410], 7, (x,y,r)=> el("ellipse",{cx:x.toFixed(1),cy:y.toFixed(1),rx:(2+r()*2.5).toFixed(1),ry:(1.2+r()*1.2).toFixed(1),fill:r()>.5?"#C79A5C":"#8C6A3E",transform:`rotate(${(r()*180)|0} ${x.toFixed(1)} ${y.toFixed(1)})`}));
+  scatter($("#specks"), 70, [226,92,580,390], 11, (x,y,r)=> r()>.3
+    ? el("use",{href:"#seed",fill:"#15170F",transform:`translate(${x.toFixed(1)} ${y.toFixed(1)}) rotate(${(r()*360)|0}) scale(${(1+r()*.6).toFixed(2)})`})
+    : el("ellipse",{cx:x.toFixed(1),cy:y.toFixed(1),rx:(3+r()*3).toFixed(1),ry:(1.8+r()*1.6).toFixed(1),fill:"#A57E58"}));
+  const parts = $("#particles");
+  [[110,120],[700,90],[80,300],[730,260],[140,420],[680,400],[390,6],[250,4]].forEach(([x,y],i)=>{
+    const g = el("g",{class:"float",style:`animation-delay:${-i*0.9}s;animation-duration:${5+i%3}s`});
+    g.appendChild(el("use",{href:"#seed",transform:`translate(${x} ${y}) rotate(${i*47}) scale(1.8)`,fill:i%3===0?"#A57E58":"#15170F"}));
+    parts.appendChild(g);
+  });
+
+  /* ---------- Init ---------- */
+  syncBuy();
+  renderCart();
+  setHandoff(!!store.get("wateen-handoff", false));
+  window.addEventListener("hashchange", route);
+  route();
+})();
+</script>
+
+</body></html>
